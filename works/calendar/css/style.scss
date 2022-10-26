@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#wrap{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+
+    >header{
+        >h1{
+            font-weight: 600;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 30px;
+            margin: 20px 0;
+        }
+    }//end of header
+
+    .slides{
+        overflow: hidden;
+        position: relative;
+        height: 800px;
+
+        >.slides-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            transition: all 0.4s;
+
+            width: calc(800px * 12);
+
+            >li{
+                position: relative;
+                width: 800px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+
+                &:nth-child(1) div{display: block;left: 20px;background-image: url(./../images/1.png);}
+                &:nth-child(2) div{background-image: url(./../images/2.png);}
+                &:nth-child(3) div{background-image: url(./../images/3.png);}
+                &:nth-child(4) div{background-image: url(./../images/4.png);}
+                &:nth-child(5) div{background-image: url(./../images/5.png);}
+                &:nth-child(6) div{background-image: url(./../images/6.png);}
+                &:nth-child(7) div{background-image: url(./../images/7.png);}
+                &:nth-child(8) div{background-image: url(./../images/8.png);}
+                &:nth-child(9) div{background-image: url(./../images/9.png);}
+                &:nth-child(10) div{background-image: url(./../images/10.png);}
+                &:nth-child(11) div{background-image: url(./../images/11.png);}
+                &:nth-child(12) div{background-image: url(./../images/12.png);}
+
+                >a{
+                    display: block;
+                    height: 800px;
+
+                    >div{
+                        display: none;
+                        position: absolute;
+                        left: -350px;
+                        top: 50%;
+                        margin-top: 70px;
+                        width: 350px;
+                        height: 300px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+
+                        transition: all 0.5s ease-in-out;
+
+                        
+                        >h2{text-indent: -9999px;}
+                    }//end of div (사이드배너)
+                }//end of a
+
+                &:nth-child(1){background-image: url(./../images/gooly1-4.jpg);}
+                &:nth-child(2){background-image: url(./../images/gooly2.jpg);}
+                &:nth-child(3){background-image: url(./../images/gooly3.jpg);}
+                &:nth-child(4){background-image: url(./../images/gooly4.jpg);}
+                &:nth-child(5){background-image: url(./../images/gooly5.jpg);}
+                &:nth-child(6){background-image: url(./../images/gooly6.jpg);}
+                &:nth-child(7){background-image: url(./../images/gooly7.jpg);}
+                &:nth-child(8){background-image: url(./../images/gooly8.jpg);}
+                &:nth-child(9){background-image: url(./../images/gooly9.jpg);}
+                &:nth-child(10){background-image: url(./../images/gooly10.jpg);}
+                &:nth-child(11){background-image: url(./../images/gooly11.jpg);}
+                &:nth-child(12){background-image: url(./../images/gooly12.jpg);}
+            }//end of li
+        }//end of .slides-container
+
+        >.slides-pagination{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: calc(44px * 12 + 30px);
+            margin-left: -279px;
+
+            >li{
+                width: 44px;
+                background-image: url(./../images/btn.gif);
+
+                &.on{background-position: 0 -26px;}
+                
+                >a{
+                    display: block;
+                    height: 26px;
+                    text-indent: -9999px;
+                }//end of a
+            }//end of li
+        }//end of .slides-pagination
+    }//end of .slides
+}//end of #wrap

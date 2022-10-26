@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>풍선게임</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script defer src="./js/function.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <div class="loading">
+            <p>로딩중</p>
+        </div>
+
+
+        <header><h1>풍선터트리기</h1></header>
+        <section class="game">
+            <div class="mode-box">
+                <button class="modeBtn easy on" onclick="levelSetting('easy',this)">EASY</button>
+                <button class="modeBtn normal" onclick="levelSetting('normal',this)">NORMAL</button>
+                <button class="modeBtn hard" onclick="levelSetting('hard',this)">HARD</button>                
+            </div>
+
+            <h2>START 버튼을 누르면 게임이 시작됩니다. 풍선을 터트려보세요~!</h2>
+            
+            <div class="game-box">
+                <div id="ballBox"></div>
+                <div class="present"></div>
+
+            </div>
+            
+            <button class="start" onclick="init()">START</button>
+            <strong class="score"><em id="scoreNum">0</em> 점</strong>
+        </section>
+        <footer><address>&copy; Designed by 2조</address></footer>
+    </div>
+
+
+
+<script>
+
+var gameStatus = false;
+let timer  = null;
+let maxLength = 10;
+let ballType = 4;
+let interval = 300;
+let ani = '5s'
+
+const $loading = $('.loading');
+
+$loading.children('p').fadeOut(5000);
+$loading.delay(350).fadeOut(800, function(){
+    $(this).remove();
+});
+
+
+function levelSetting(type , obj){
+    if(gameStatus){
+        console.log('게임진행중');
+        return false;
+    } 
+    const $modeBtn = $('.modeBtn');
+    
+    $modeBtn.removeClass('on');
+    obj.classList.add('on');
+
+    if(type == 'easy'){
+        ballType = 4;
+        interval = 300;
+        ani = '10s'
+    }
+    if(type == 'normal'){
+        ballType = 2;
+        maxLength = 20
+        interval = 200;
+        ani = '7s'
+    }
+    if(type == 'hard'){
+        ballType = 1;
+        maxLength = 30
+        interval = 100;
+        ani = '3s'
+    }
+
+}
+
+
+function init(){
+    if(gameStatus){
+        console.log('게임진행중');
+        return false;
+    } 
+    let present = $('.present');
+    
+    gameStatus = true;
+    present.removeClass("on");
+    rootScore = 0;
+    $("#scoreNum").html(rootScore);
+
+    let wrap = $("#ballBox");
+    let ball = $("<span class='ball'>");
+    let ballIdx = 0;
+    timer = setInterval(function(){
+        if(ballIdx >= maxLength) {
+            clearInterval(timer);
+            setTimeout(function(){
+                present.addClass("on");
+                gameStatus = false;
+            },3000);
+            return false;
+        }
+        
+        let item = ball.clone(true);
+        let ran1 = Math.ceil(Math.random()*4);
+        let ran2 = Math.ceil(Math.random()*4);
+        let ran3 = Math.ceil(Math.random()*587);
+        item.addClass("size-"+ ran1);
+        item.addClass("ani-"+ ran2);
+        item.css({left:ran3,animationDuration:ani});
+        // item.click(clickEvt)
+        if(ran1 == ballType){
+            ballIdx++;
+            item.css({zIndex:2});
+            item.addClass("on");
+            item.on("mousedown",clickEvt);
+        } 
+        wrap.append(item);
+    },interval)
+}
+
+let rootScore = 0;
+function clickEvt(evt,obj){
+    if(evt.target.chk) return false;
+    evt.target.chk = true;
+    let scoreEl = $("#scoreNum")
+    rootScore+=100;
+    scoreEl.html(rootScore);
+    evt.target.classList.add('end');
+
+    
+    let present = $('.present');
+    if(rootScore == maxLength*100) {
+        clearInterval(timer);
+        present.addClass("on");
+        gameStatus = false;
+    }
+}
+</script>
+</body>
+</html>

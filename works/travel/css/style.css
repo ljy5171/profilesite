@@ -1,0 +1,1000 @@
+@charset "utf-8";
+
+/* 공통요소 */
+.clearfix{*zoom:1}
+.clearfix:after{display:block;clear:both;content:'';}
+
+header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    margin-top: -85px;
+    background-color: rgb(57, 125, 81);
+    
+}
+
+header>.container{
+    position: relative;
+    width: 1280px;
+    height: 85px;
+    margin: 0 auto;
+    
+    
+}
+
+header>.container>h1.logo{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 65px;
+    margin-top: -10px;
+}
+
+header>.container>h1.logo>a{
+    display: block;
+    height: 65px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+header>.container>nav{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+ 
+}
+
+header>.container>nav>.gnb{
+    display: flex;
+}
+
+
+header>.container>nav>.gnb>li>a{
+    display: block;
+    height: 30px;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+header>.container>nav>.gnb>li:hover>a,
+header>.container>nav>.gnb>li.on>a{
+    color: rgb(198, 230, 255);
+    font-weight: 800;
+    
+}
+
+/*비주얼 영역*/
+#visual{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 85px;
+    
+    overflow: hidden;
+}
+
+#visual>h2{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -650px;
+    width: 1000px;
+    height: 500px;
+    line-height: 100px;
+    color: #fff;
+    font-size: 60px;
+}
+
+#visual>p:nth-of-type(1){
+    position: absolute;
+    left: 50%;
+    top: 310px;
+    margin-left: -530px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+#visual>p:nth-of-type(1)>a{
+    z-index: 100; 
+    position: relative; 
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+
+#visual>.container{
+    display: flex;
+    width: 400%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s ease-in-out;
+    
+}
+
+#visual>.container>li{
+    z-index: -100;
+    width: 25%;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+}
+#visual>.container>li>a{
+    display: block;
+    height: 700px;
+    text-indent: -9999px;
+}
+#visual>.container>li:nth-child(1){background-image: url(./../images/photo1.jpg);}
+#visual>.container>li:nth-child(2){background-image: url(./../images/photo2.jpg);}
+#visual>.container>li:nth-child(3){background-image: url(./../images/photo3.jpg);}
+#visual>.container>li:nth-child(4){background-image: url(./../images/photo4.jpg);}
+
+
+
+#visual>p:nth-of-type(2),
+#visual>p:nth-of-type(3){
+    position: absolute;
+    
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    
+    background-size: cover;
+    background-position: center center;
+}
+
+#visual>p:nth-of-type(2){
+    left: 0;
+    background-image: url(./../images/prev.svg);
+}
+#visual>p:nth-of-type(3){
+    right: 0px;
+    background-image: url(./../images/next.svg);
+}
+
+#visual>p:nth-of-type(2)>a,
+#visual>p:nth-of-type(3)>a{
+    display: block;
+    height: 24px;
+    text-indent: -9999px;
+}
+
+
+/*스위스에 대해*/
+section>h2{
+    position: absolute;
+    text-indent: -9999px;
+}
+section>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    
+}
+
+section>article.cont1{
+    position: relative;
+    height: 1200px;
+    color: rgb(70, 70, 70); 
+    font-size: 20px;
+    line-height: 50px;
+   
+}
+
+section>.cont1>h2{
+    position: absolute; 
+    text-indent: -9999px; 
+    
+}
+section>.cont1>div{
+    position: absolute;
+    left: 0;
+    height: 400px;
+    
+
+}
+section>.cont1>div:nth-of-type(1){
+    top: 0px;
+    width: 100%;
+    background-color: rgb(225, 235, 224);
+    
+}
+
+section>.cont1>div:nth-of-type(1)>.tit{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+section>.cont1>div:nth-of-type(1)>.img{
+    position: absolute;
+    top: 25px;
+    left: 240px;
+    width: 20px;
+    height: 20px;
+    background-image: url(./../images/flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section>.cont1>div:nth-of-type(1)>.txt{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    
+}
+
+section>.cont1>div:nth-of-type(2){
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    
+}
+
+section>.cont1>div:nth-of-type(2)>.tit{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 25px;
+    font-weight: 800;
+}
+section>.cont1>div:nth-of-type(2)>.txt{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+section>.cont1>div:nth-of-type(3){
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(225, 235, 224);
+}
+section>.cont1>div:nth-of-type(3)>.tit{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+section>.cont1>div:nth-of-type(3)>.txt{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+section>.cont1>div:nth-of-type(3)>.img{
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    width: 300px;
+    height: 200px;
+    background-image: url(./../images/administrative_div.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*관광지*/
+section>.cont2{
+    position: relative;
+    height: 900px;
+    
+}
+
+section>.cont2>h2{
+    text-indent: -9999px;
+}
+
+section>.cont2>.slides{
+    position: relative;
+    top: -28%;
+}
+section>.cont2>.slides>ul{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 350px;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+section>.cont2>.slides>ul>li{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fade 1s;
+}
+section>.cont2>.slides>ul>li>a{
+    display: block;
+    height: 350px;
+    text-indent: -9999px;
+}
+
+section>.cont2>.slides>ul>li:nth-child(1){
+    display: block;
+    background-image: url(./../images/jungfrau.jpg);
+}
+section>.cont2>.slides>ul>li:nth-child(2){
+    background-position: 0px -10px;
+    background-image: url(./../images/matterhorn.jpg);
+}
+section>.cont2>.slides>ul>li:nth-child(3){
+    background-position: 0 0;
+    background-image: url(./../images/rhine.png);
+}
+section>.cont2>.slides>ul>li:nth-child(4){
+    background-image: url(./../images/luzern.jpg);
+}
+
+
+section>.cont2>.slides>.next>p{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+section>.cont2>.slides>.next>p:nth-of-type(1){
+    left: 0;
+    background-image: url(./../images/left.svg);
+}
+section>.cont2>.slides>.next>p:nth-of-type(2){
+    right: 0;
+    background-image: url(./../images/right.svg);
+}
+
+section>.cont2>.slides>.next>p>a{
+    display: block;
+    height: 30px;
+    text-indent: -9999px;
+
+}
+section>.cont2>.slides>.play>p{
+    position: absolute;
+    top: 330px;
+    bottom: 0;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(./../images/icons.png);
+    background-repeat: no-repeat;
+}
+
+section>.cont2>.slides>.play>p:nth-of-type(1){
+    right: 20px;
+    background-position: -62px -24px;
+}
+section>.cont2>.slides>.play>p:nth-of-type(2){
+    right: 0;
+    background-position: 0px -57px;
+}
+
+section>.cont2>.slides>.play>p>a{
+    display: block;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+
+section>.cont2>ol{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -600px;
+    width: 600px;
+    height: 250px;
+    
+}
+section>.cont2>ol>.picture>a{
+    display: block;
+    text-indent: -9999px;
+}
+section>.cont2>.Matterhorn{
+    margin-left: 0px;
+}
+section>.cont2>.Rhine{
+    margin-top: 200px;
+}
+section>.cont2>.Luzern{
+    margin-left: 0;
+    margin-top: 200px;
+}
+
+section>.cont2>ol>.picture{
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./../images/jungfrau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+section>.cont2>.Matterhorn>.picture{
+    background-image: url(./../images/matterhorn.jpg);
+}
+section>.cont2>.Rhine>.picture{
+    background-image: url(./../images/rhine.png);
+}
+section>.cont2>.Luzern>.picture{
+    background-image: url(./../images/luzern.jpg);
+}
+section>.cont2>ol>.picture>a{
+    display: block;
+    height: 100px;
+}
+section>.cont2>ol>.text{
+    font-size: 15px;
+    padding: 10px 30px;
+   
+}
+
+section>.cont2>ol>.text>span{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/*즐길거리*/
+section>.cont3{
+    position: relative;
+    height: 800px;
+}
+section>.cont3>h2{
+    text-indent: -9999px;
+}
+section>.cont3>.frame{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -600px;
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section>.cont3>.frame>.container{
+    width: 3300px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+section>.cont3>.frame>.container>.text>h3{
+    position: absolute;
+    top: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(68, 68, 68);
+}
+section>.cont3>.frame>.container>.text>h3:nth-child(1){
+    left: 15px;
+}
+section>.cont3>.frame>.container>.text>h3:nth-child(2){
+    left: 1215px;
+}
+section>.cont3>.frame>.container>.text>h3:nth-child(3){
+    left: 2415px;
+}
+
+section>.cont3>.frame>.container>.pic-container{
+    position: absolute;
+    top: 50px;
+    width: 3300px;
+    display: flex;
+    justify-content: space-around;
+}
+section>.cont3>.frame>.container>.pic-container>figure{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+section>.cont3>.frame>.container>.pic-container>figure:hover>a{
+    transform: scale(1.2);
+
+}
+
+
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(1)>a{
+    background-image: url(./../images/trottibiking.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(2)>a{
+    background-image: url(./../images/ski.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(3)>a{
+    background-image: url(./../images/skydiving.png);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(4)>a{
+    background-image: url(./../images/zipline.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(5)>a{
+    background-image: url(./../images/food1.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(6)>a{
+    background-image: url(./../images/food2.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(7)>a{
+    background-image: url(./../images/food3.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(8)>a{
+    background-image: url(./../images/food4.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(9)>a{
+    background-image: url(./../images/festival1.png);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(10)>a{
+    background-image: url(./../images/festival2.png);
+}
+section>.cont3>.frame>.container>.pic-container>figure:nth-child(11)>a{
+    background-image: url(./../images/festival3.jpg);
+}
+section>.cont3>.frame>.container>.pic-container>figure>a{
+    width: 280px;
+    border-radius: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 350px;
+    text-indent: -9999px;
+    transition: all 1s ease-in-out;
+}
+
+section>.cont3>.content{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 250px;
+}
+
+section>.cont3>.content>ul>li{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 300px;
+
+    display: none; 
+    font-size: 20px;
+    line-height: 40px;
+   
+}
+section>.cont3>.content>ul>li>.title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+section>.cont3>.content>ul>li:nth-child(1){
+    display: block;
+}
+
+section>.cont3>.content>p{
+    position: absolute;
+    top: 50%;
+    margin-top: -370px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    box-shadow: 0 0 5px rgb(66, 66, 66);
+}
+
+section>.cont3>.content>p:nth-of-type(1){
+    left: 0;
+    background-image: url(./../images/left.svg);
+}
+section>.cont3>.content>p:nth-of-type(2){
+    right: 0;
+    background-image: url(./../images/right.svg);
+}
+
+section>.cont3>.content>p>a{
+    display: block;
+    height: 30px;
+}
+
+
+/*숙박&교통*/
+section>.cont4{
+    position: relative;
+    height: 1800px;
+    
+}
+
+section>.cont4>.accommodation{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+   
+}
+section>.cont4>.accommodation>h2{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -600px;
+    font-size: 40px;
+}
+section>.cont4>.accommodation>div>h3{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 25px;
+}
+
+section>.cont4>.accommodation>.hotel{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: -600px;
+    width: 400px;
+    height: 500px;
+    
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+section>.cont4>.accommodation>.hotel>ul>li{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-of-type(1){
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-of-type(2){
+    position: absolute;
+    left: 280px;
+    top: 200px;
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-of-type(3){
+    position: absolute;
+    left: 20px;
+    top: 340px;
+}
+
+section>.cont4>.accommodation>.hotel>ul>li:hover>a{
+    transform: scale(1.2);
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-child(1)>a{
+  
+    background-image: url(./../images/hotel1.png);
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-child(2)>a{
+   
+    background-image: url(./../images/hotel2.png);
+}
+section>.cont4>.accommodation>.hotel>ul>li:nth-child(3)>a{
+    
+    background-image: url(./../images/hotel3.png);
+}
+section>.cont4>.accommodation>.hotel>ul>li>a{
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+section>.cont4>.accommodation>.hotel>p:nth-of-type(1){
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: 15px;
+}
+section>.cont4>.accommodation>.hotel>p:nth-of-type(2){
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    font-size: 15px;
+}
+section>.cont4>.accommodation>.hotel>p:nth-of-type(3){
+    position: absolute;
+    top: 380px;
+    left: 200px;
+    font-size: 15px;
+}
+
+
+section>.cont4>.accommodation>.glamping{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: -200px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(225, 235, 224);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+section>.cont4>.accommodation>.glamping>ul>li{
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;  
+}
+
+section>.cont4>.accommodation>.glamping>ul>li:nth-of-type(1){
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+section>.cont4>.accommodation>.glamping>ul>li:nth-of-type(2){
+    position: absolute;
+    left: 280px;
+    top: 200px;
+}
+section>.cont4>.accommodation>.glamping>ul>li:nth-of-type(3){
+    position: absolute;
+    left: 20px;
+    top: 340px;
+}
+
+section>.cont4>.accommodation>.glamping>ul>li:hover>a{
+    transform: scale(1.2);
+}
+section>.cont4>.accommodation>.glamping>ul>li:nth-child(1)>a{
+    background-image: url(./../images/glamping1.png);
+}
+section>.cont4>.accommodation>.glamping>ul>li:nth-child(2)>a{
+    background-image: url(./../images/glamping2.png);
+}
+section>.cont4>.accommodation>.glamping>ul>li:nth-child(3)>a{
+    background-image: url(./../images/glamping3.png);
+}
+section>.cont4>.accommodation>.glamping>ul>li>a{
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 1s ease-in-out;
+}
+
+section>.cont4>.accommodation>.glamping>p:nth-of-type(1){
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    font-size: 15px;
+}
+section>.cont4>.accommodation>.glamping>p:nth-of-type(2){
+    position: absolute;
+    top: 240px;
+    left: 160px;
+    font-size: 15px;
+}
+section>.cont4>.accommodation>.glamping>p:nth-of-type(3){
+    position: absolute;
+    top: 380px;
+    left: 140px;
+    font-size: 15px;
+}
+
+section>.cont4>.accommodation>.airb{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: 200px;
+    width: 400px;
+    height: 500px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+section>.cont4>.accommodation>.airb>ul>li{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+section>.cont4>.accommodation>.airb>ul>li:hover>a{
+    transform: scale(1.2);
+}
+section>.cont4>.accommodation>.airb>ul>li>a{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(./../images/airb.jpg);
+    transition: all 1s ease-in-out;
+}
+section>.cont4>.accommodation>.airb>p{
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    font-size: 15px;
+}
+section>.cont4>.vehicle{
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    height: 1200px;
+}
+section>.cont4>.vehicle>.car{
+    height: 300px;
+    
+}
+section>.cont4>.vehicle>.car>h2{
+    
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -600px;
+    font-size: 40px;
+    
+}
+
+section>.cont4>.vehicle>.car>dl{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -580px;
+    line-height: 30px;
+}
+section>.cont4>.vehicle>.car>dl>dt{
+    font-size: 20px;
+    font-weight: 600;
+}
+section>.cont4>.vehicle>.car>dl>dd{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+section>.cont4>.vehicle>.bus{
+    height: 300px;
+    background-color: rgb(225, 235, 224);
+}
+section>.cont4>.vehicle>.bus>dl{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    width: 1200px;
+    margin-left: -580px;
+    line-height: 30px;
+}
+section>.cont4>.vehicle>.bus>dl>dt{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section>.cont4>.vehicle>.bus>dl>dd{
+    font-size: 15px;
+}
+section>.cont4>.vehicle>.grand{
+    height: 600px;
+    
+}
+section>.cont4>.vehicle>.grand>dl{
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    width: 1200px;
+    margin-left: -580px;
+    line-height: 30px;
+}
+section>.cont4>.vehicle>.grand>dl>dt{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+section>.cont4>.vehicle>.grand>dl>dd{
+    font-size: 15px;
+}
+section>.cont4>.vehicle>.grand>dl>dd:nth-of-type(2){
+    
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -500px;
+    background-image: url(./../images/grandtrain.png);
+    width: 1000px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+footer>address{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    background-color: #dedede;
+}
+
+aside{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+aside>a.top{
+    display: block;
+    width: 28px;
+    height: 28px;
+    
+    line-height: 28px;
+    text-align: center;
+    background-color: rgb(183, 229, 181);
+
+}
+
+aside>a.top>i{color: #fff;}
+
+aside>a.top:hover{
+    background-color: rgb(134, 186, 132);
+}
+
+
+

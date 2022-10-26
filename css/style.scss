@@ -1,0 +1,2158 @@
+$pri-color-1 : rgb(203, 220, 250);
+$pri-color-2 : rgb(192, 238, 213);
+
+$sec-color-1 : rgb(123, 123, 123);
+$sec-color-2 : rgb(129, 129, 129);
+
+#wrap{
+
+    background-color: $pri-color-1;
+    >.loading{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 200;
+
+        >p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100px;
+            height: 80px;
+            margin-top: -40px;
+            margin-left: -50px;
+            text-indent: -9999px;
+            background-image: url(./../images/loading.gif);
+            background-size: 200%;
+            background-position: center center;
+            
+        }//end of p
+    }//end of .loading
+
+    >header{
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+        height: 150px;
+        background-color: transparent;
+
+
+        >.container{
+            // height: 66px;
+
+            >h2{
+                position: absolute;
+                left: 50%;
+                top: 45px;
+                margin-left: -60px;
+
+                >a{
+                    display: block;
+                    height: 32px;
+                    color: #fff;
+                    line-height: 32px;
+                }
+
+            }//end of h2
+
+            >.logo2{
+                width: 25px;
+                height: 25px;
+                text-indent: -9999px;
+                background-image: url(./../images/logo_leaf.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                left: 50%;
+                top: 20px;
+                margin-left:calc(-25px/2);
+
+            }
+            
+            >nav.side{
+                top: 30px;
+            }
+            >nav{
+                position: absolute;
+                left: 50%;
+                margin-left: -300px;
+                top: 110px;
+
+                @media screen and (max-width:640px) {
+                    display: none;
+                }
+
+                >.gnb{
+                    display: flex;
+
+                    >li{
+                        margin-right: 20px;
+                       text-shadow: 0px 0px 3px rgb(173, 173, 173);
+
+                        &:last-child{border-right: 0;}
+
+                        &.on>a,
+                        &:hover>a{
+                            color: rgb(167, 167, 167);
+                        }
+
+                        >a{
+                            display: block;
+                            height: 14px;
+                            padding: 0 15px;
+                            color: #fff;
+                            font-weight: 500;
+                            line-height: 12px;
+                            // text-shadow: 0px 0  5px rgb(107, 107, 107);
+                            transition: all 0.2s;
+
+                        }//end of a
+                    }//end of li
+                }//end of .gnb
+            }//end of nav
+
+        }//end of .container
+    }
+
+    #home{
+        // background: linear-gradient(to bottom, $pri-color-1, transparent), url(./../images/home.jpg);
+        background-image: url(./../images/home.jpg);
+        opacity: 0.8;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+
+        >.home_intro{
+            color: #fff;
+
+            >h2{
+                position: absolute;
+                left: 50%;
+                top: 30%;
+                margin-left: -33vw;
+                font-size: 4vw;
+                letter-spacing: 3vw;
+                line-height: 150px;
+            }
+
+            >p{
+                position: absolute;
+                top: 45%;
+                left: 75%;
+                margin-top: 250px;
+                font-size: 1vw;
+                font-weight: 500;
+
+                @media screen and (max-width:640px) {
+                   display: none;
+                }
+
+                >span{
+                    display: block;
+                    text-align: right;
+                    line-height: 3vw;
+                }
+            }
+        }
+
+
+        >.mouse{
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            width: 30px;
+            height: 50px;
+            margin-left: -15px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+    
+            @media screen and (max-width:640px) {
+                display: none;
+            }
+                     
+    
+            @keyframes mousewheel{
+                0%{top: 5px; opacity: 0;}
+                30%{top: 10px; opacity: 1;}
+                100%{top: 25px; opacity: 0;}
+            }
+    
+            >.wheel{
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                width: 4px;
+                height: 10px;
+                margin-left: -2px;
+                text-indent: -9999px;
+                background-color: #fff;
+                border-radius: 2px;
+    
+                animation: mousewheel 1s linear infinite;
+            }
+        }//end of .mouse
+    }//end of home
+
+    #intro{
+        height: 100vh;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
+
+        >h2{
+            position: absolute;
+            right: 5%;
+            top: 20vh;
+            font-size: 3vw;
+            >span{
+                position: absolute;
+                right: 0;
+                top: -10vh;
+                display: block;
+            }
+        }//end of h2
+        >.cloud{
+           >li{
+            position: absolute;
+            top: 50%;
+            width: 1000px;
+            height: 800px;
+            z-index: 100;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: -100px;
+            text-indent: -9999px;
+            // border: 1px solid #000;
+            &:nth-child(1){
+                left: 0;
+                background-image: url(./../images/cloud1.png);
+            }
+            &:nth-child(2){
+                left: 700px;
+                background-image: url(./../images/cloud2.png);
+            }
+            &:nth-child(3){
+                left: 900px;
+                background-image: url(./../images/cloud3.png);
+            }
+            &:nth-child(4){
+                left: 2000px;
+                margin-top: -150px;
+                background-image: url(./../images/cloud2.png);
+            }
+            &:nth-child(5){
+                left: 2500px;
+                background-image: url(./../images/cloud1.png);
+            }
+            &:nth-child(6){
+                left: 2900px;
+                background-image: url(./../images/cloud3.png);
+            }
+           }
+          }
+    }//end of #intro
+
+    #about{
+        height: 100vh;
+        background: linear-gradient(to bottom, $pri-color-1, #fff);
+        position: relative;
+        color: $sec-color-2;
+        @media screen and (max-width:640px) {
+            height: 200vh;
+        }
+
+        >.container{
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            margin-left: -730px;
+            margin-bottom: -260px;
+            width: 1400px;
+            height: 600px;
+
+            @media screen and (max-width:640px) {
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
+                margin: 0;
+            }
+            
+            >h2{
+                position: absolute;
+                top: 150px;
+                left: 150px;
+                text-indent: -9999px;
+                // background-color: #fff;
+                background-image: url(./../images/profile4.jpg);
+                background-repeat: no-repeat;
+                background-position: -245px -290px;
+                background-size: 230%;
+                width: 360px;
+                height: 360px;
+                border-radius: 50%;
+
+                @media screen and (max-width:640px) {
+                    top: -8vh;
+                    left: 20vw;
+                    width: 40vw;
+                    height: 40vw;
+                    background-position: -27vw -33vw;
+                }
+            }
+
+            >div{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 350px;
+                height: 200px;
+                font-size: 16px;
+                line-height: 30px;
+                // border: 1px solid #000;
+                
+                @media screen and (max-width:640px) {
+                    width: 60%;
+                    font-size: 3vw;
+                }
+
+                >h3{
+                    padding-bottom: 10px;
+                    font-size: 22px;
+
+                    @media screen and (max-width:640px) {
+                        font-size: 4vw;
+                    }
+                }
+                >.tit{
+                    position: absolute;
+                    width: 80px;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    // border: 1px solid #000;
+                }
+                >.cont{
+                    position: absolute;
+                    left: 80px;
+                    width: 270px;
+                    // border: 1px solid #000;
+                }
+
+            }
+
+            >.profile{
+                left: 700px;
+                top: 120px;
+
+                @media screen and (max-width:640px) {
+                    left: 20%;
+                    top: 20%;
+                }
+            }       
+            
+            >.education{
+                left: 1000px;
+                top: 120px;
+                // line-height: 40px;
+                @media screen and (max-width:640px) {
+                    top: 40%;
+                    left: 20%;
+                }
+
+                >.tit{
+                    
+                    >li{
+                        margin-bottom: 5px;
+                       
+                    }
+                }
+
+                >.cont{
+                    >li{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            >.skill{
+                left: 700px;
+                top: 350px;
+                @media screen and (max-width:640px) {
+                   left: 20%;
+                   top: 60%;
+                }
+
+                >.cont{
+                    // position: relative;
+                    >.progress{
+                        position: relative;
+                        left: 20px;
+                        top: 13px;
+                        width: 170px;
+                        height: 5px;
+                        margin-bottom: 23px;
+                        border-radius: 5px;
+                        background-color: #ccc;
+                        @media screen and (max-width:640px) {
+                            width: 40%;
+                        }
+                        
+                        >.bar{
+                            height: 100%;
+                            width: 60%;
+                            border-radius: 5px;
+                            background-color: $sec-color-2;
+                            text-indent: -9999px;
+                            transition: all 2s ease-in-out;
+                        }
+                    }
+                }
+            }
+            >.hobby{
+                left: 1000px;
+                top: 350px;
+
+                @media screen and (max-width:640px) {
+                    left: 20%;
+                    top: 80%;
+                }
+                >.cont{
+                    left: 30px;
+                    >li{
+                        position: relative;
+                        margin-bottom: 5px;
+
+                        &:before{
+                            position: absolute;
+                            left: -20px;
+                            top: 11px;
+                            display: block;
+                            content: '';
+                            width: 3px;
+                            height: 3px;
+                            border-radius: 50%;
+                            border: 3px solid $sec-color-2;
+                        }
+                    }
+
+                }            
+            }
+        }
+    }//end of #about
+
+    #strength{
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: rgb(167, 167, 167);
+        background: linear-gradient(to bottom, #fff, $pri-color-2);
+
+        @media screen and (max-width:640px) {
+            width: 100%;
+            height: 100vh;
+        }
+
+        >.strength_container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            // border: 1px solid #000;
+
+            >h2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -150px;
+                margin-left: -530px;
+                font-size: 60px;
+                color: $sec-color-1;
+                
+                >span{
+                    display: block;
+                }
+                @media screen and (max-width:640px) {
+                    top: 0;
+                    left: 40%;
+                    font-size: 7vw;
+                    margin: 0 0 0 -100px;
+                }
+                
+            }//end of h2
+            
+            h3{
+                text-indent: -9999px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                background-image: url(./../images/strength_bg2.png);
+                background-size: 107%;
+                background-repeat: no-repeat;
+                background-position: 0px -150px;
+                opacity: 0.7;
+
+                @media screen and (max-width:640px) {
+                    display: none;
+                }
+            }
+
+            >ol{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 500px;
+                margin-top: -280px;
+                margin-left: 200px;
+                
+                // border: 1px solid #000;
+
+                @media screen and (max-width:640px) {
+                    left: 0;
+                    top: 60%;
+                    width: 50vw;
+                    margin-left: 25vw;
+                }
+                
+                >li{
+                    font-size: 28px;
+                    font-weight: 500;
+                    margin: 20px 0;
+                    color: $sec-color-1;
+                    @media screen and (max-width:640px) {
+                        font-size: 3.5vw;
+                    }
+
+                    &:after{
+                        position: relative;
+                        left: -70px;
+                        top: -45px;
+                        display: block;
+                        content: '';
+                        width: 50px;
+                        height: 50px;
+                        background-image: url(./../images/tree.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+
+                        @media screen and (max-width:640px) {
+                            width: 20px;
+                            height: 20px;
+                            left: -40px;
+                            top: -20px;
+                        }
+                    }
+                }
+            }
+        }//end of .strength_container
+    }//end of #strength
+
+    #portfolio{
+        position: relative;
+        height: 200vh;
+        background: linear-gradient(to bottom, $pri-color-2, #fff);
+        // border: 1px solid #000;
+        >h1{display: none;}
+        >.portfolio1{
+            position: relative;
+            height: 100vh;
+            
+            >h2{text-indent: -9999px;}
+            >p{
+                position: absolute;
+                left: 50%;
+                bottom: 3%;
+                margin-left: -18px;
+                &:after{
+                    position: absolute;
+                    left: 10px;
+                    top: 20px;
+                    display: block;
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-image: url(./../images/after_down.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    @keyframes scroll{
+                        0%{top: 20px;opacity: 0;}
+                        30%{top: 25px;opacity: 1;}
+                        100%{top: 30px;opacity: 0;}
+                    }
+                    animation: scroll 1s linear infinite;
+                }
+            }
+            >.page{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -700px;
+                margin-top: -300px;
+                width: 1400px;
+                height: 600px;
+                // border: 1px solid #000;
+                @media screen and (max-width:640px) {
+                    width: 80%;
+                    height: 90%;
+                    margin: 0;
+                    left: 10%;
+                    top: 0;
+                }
+                
+                >p{
+                    position: absolute;
+                    top: 50%;
+                    width: 40px;
+                    margin-top: -35px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    z-index: 100;
+                    >a{
+                        display: block;
+                        height: 50px;
+                        text-indent: -9999px;
+                    }
+                    &:nth-child(1){
+                        left: 5%;
+                        background-image: url(./../images/cleantopia/slide_prev.png);
+                        @media screen and (max-width:640px) {
+                            left: 0;
+                        }
+                    }
+                    &:nth-child(2){
+                        left: 95%;
+                        background-image: url(./../images/cleantopia/slide_next.png);
+                        @media screen and (max-width:640px) {
+                            left: 92%;
+                        }
+                    }
+                }//end of p
+
+                >.frame{
+                    position: absolute;
+                    left: 60px;
+                    top: 0;
+                    width: 1300px;
+                    height: 600px;
+                    overflow: hidden;
+                    // border: 1px solid blue;
+                    @media screen and (max-width:640px) {
+                        left: 10%;
+                        top: 5%;
+                        width: 350px;
+                        height: 90%;
+                    }
+
+                
+                    >.ul-container{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: calc(1300px * 3);
+                        display: flex;
+                        @media screen and (max-width:640px) {
+                            width: calc(350px * 3);
+                            height: 600px;
+                        }
+
+
+                        >li{
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                            width: 1300px;
+                            height: 600px;
+
+                            @media screen and (max-width:640px) {
+                                width: 350px;
+                                height: 600px;
+                            }
+                            >.mockup{
+                                >p{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    text-indent: -9999px;
+                                    @media screen and (max-width:640px) {
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    &:nth-child(1){
+                                        margin-left: -500px;
+                                        margin-top: -200px;
+                                        width: 500px;
+                                        height: 400px;
+                                        background-image: url(./../images/desktop.png);
+                                        @media screen and (max-width:640px) {
+                                            width: 40vw;
+                                            // height: 200px;
+                                            margin: 20px 10vw;
+                                        }
+
+                                        &:after{
+                                            position: absolute;
+                                            left: 18px;
+                                            top: 14px;
+                                            display: block;
+                                            content: '';
+                                            width: 450px;
+                                            height: 260px;
+                                            background-image: url(./../images/cleantopia/main.png);
+                                            background-size: cover;
+                                            background-position: center 0;
+                                            background-repeat: no-repeat;
+                                            @media screen and (max-width:640px) {
+                                                left: 6px;
+                                                top: 6px;
+                                                width: 37.5vw;
+                                                height: 21vw;
+                                            }
+                                        }
+                                        &:before{
+                                            position: absolute;
+                                            left: 0;
+                                            top: 312px;
+                                            display: block;
+                                            content: '';
+                                            width: 500px;
+                                            height: 100px;
+                                            text-indent: -9999px;
+                                            background-image: url(./../images/mockup_desktop_shadow.png);
+                                            background-size: contain;
+                                            background-position: -25px center;
+                                            background-repeat: no-repeat;
+                                            @media screen and (max-width:640px) {
+                                                display: none;
+                                            }
+                                        }
+                
+                                    }
+                                    &:nth-child(2){
+                                        margin-left: -60px;
+                                        width: 100px;
+                                        height: 180px;
+                                        background-image: url(./../images/mockup_mobile.png);
+                                        @media screen and (max-width:640px) {
+
+                                            width: 7vw;
+                                            height: 14vw;
+                                            margin: 23vw 0 0 48vw ;
+                                            background-size: cover;
+                                        }
+
+                                        &:after{
+                                            position: absolute;
+                                            left: 6px;
+                                            top: 5px;
+                                            display: block;
+                                            content: '';
+                                            width: 78px;
+                                            height: 168px;
+                                            background-image: url(./../images/cleantopia/mobile_main.png);
+                                            background-size: cover;
+                                            background-position: -3px 0;
+                                            background-repeat: no-repeat;
+                                            border-radius: 5px;
+                                            @media screen and (max-width:640px) {
+                                                left: 3px;
+                                                top: 2px;
+                                                width: 6.3vw;
+                                                background-size: 103%;
+                                            }
+                                        }
+                                        &:before{
+                                            position: absolute;
+                                            left: 0;
+                                            top: 200px;
+                                            width: 89px;
+                                            height: 30px;
+                                            display: block;
+                                            content: '';
+                                            background-image: url(./../images/mockup_mobile_shadow.png);
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            @media screen and (max-width:640px) {
+                                                display: none;
+                                            }
+
+                                        }
+                
+                                    }
+                                }//end of p
+                                
+                            }//end of .mockup
+                
+                            >.desc{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-top: -150px;
+                                margin-left: 150px;
+                                width: 500px;
+                                height: 400px;
+                                @media screen and (max-width:640px) {
+                                    left: 10%;
+                                    top: 200px;
+                                    width: 50vw;
+                                    height: 200px;
+                                    margin: 0;
+                                    // border: 1px solid #000;
+                                }
+                
+                                >.tit{
+                
+                                    // border: 1px solid #000;
+                                    >h3{
+                                        font-size: 30px;
+                                        @media screen and (max-width:640px) {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                    >p{
+                                        font-size: 18px;
+                                        @media screen and (max-width:640px) {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                
+                                >.txt{
+                                    margin: 20px 0;
+                                    // border: 1px solid #000;
+                                    >li{
+                                        display: flex;
+                                        // border: 1px solid white;
+                                        >span{
+                                            &:nth-child(1){
+                                                display: block;
+                                                width: 100px;
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                                margin-right: 20px;
+                                                // border: 1px solid red;
+                                                @media screen and (max-width:640px) {
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                            &:nth-child(2){
+                                                display: block;
+                                                width: 300px;
+                                                // border: 1px solid blue;
+                                                @media screen and (max-width:640px) {
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }//end of .txt
+                
+                                >.btn{
+                                    display: flex;
+                                    
+                                    >a{
+                                        display: block;
+                                        width: 100px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        margin-right: 30px;
+                                        border-radius: 40px;
+                                        color: #fff;
+                                        background-color: rgb(99, 207, 148);
+                                        box-shadow: 5px 5px 10px #ccc;
+                                        transition: all 0.2s ease-in-out;
+                                        &:hover{
+                                            box-shadow: 5px 5px 10px rgb(102, 102, 102);
+
+                                        }
+                                        &:nth-of-type(1){
+                                            @media screen and (max-width:640px) {
+                                                display: none;
+                                            }
+                                        }
+                                        &:nth-of-type(2){
+                                            @media screen and (max-width:640px) {
+                                                margin-left: 15vw;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }//end of .desc
+
+
+                            &.pf_greenpeace{
+                               
+                                >.mockup{
+                                    >p{
+                                        &:nth-child(1){
+                                            &:after{
+                                                background-image: url(./../images/greenpeace/greenpeace.png);
+                                                background-size: cover;
+                                                background-position: center 0;
+                                            }
+                                        }
+                                        &:nth-child(2){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }//end of &.pf_greenpeace
+                            
+                            &.pf_profilesite{
+                                >.mockup{
+                                    >p{
+                                        &:nth-child(1){
+                                            &:after{
+                                                background-image: url(./../images/profilesite/home.png);
+                                                background-position: -30px 0;
+                                                @media screen and (max-width:640px) {
+                                                    // width: ;
+                                                    // height: 10.4vh;
+                                                    background-position: -10px 0;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2){
+                                            &:after{
+                                                left: 5px;
+                                                width: 80px;
+                                                height: 170px;
+                                                background-image: url(./../images/profilesite/mobile_home.png);
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                background-position: -2px center;
+                                                @media screen and (max-width:640px) {
+                                                    width: 6.4vw;
+                                                    height: 13.3vw;
+                                                    margin: 0px -3px;
+                                                    background-size: cover;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }//end of &.pf_bccard
+                        }//end of li
+                    }//end of .ul-container
+                }//end of .frame
+
+                >.shadow{
+                    display: none;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    z-index: 300;
+        
+                    >.lightbox{
+                        display: block;
+                        overflow-y: scroll;
+                        position: absolute;
+                        left: 50%;
+                        top: 15vh;
+                        width: 1200px;
+                        height: 85vh;
+                        // margin-top: -320px;
+                        margin-left: -600px;
+                        color: rgb(83, 83, 83);
+                        z-index: 300;
+                        background-color: #fff;
+                        // border: 1px solid #000;
+                        
+                        >.info{
+                            // color:lavenderblush, honeydew, ghostwhite,lemonchiffon,lightcyan,mintcream,rgb(255, 252, 224),lightyellow
+                            background: linear-gradient(to bottom , rgb(227, 255, 255) , #fff );
+                            position: relative;
+                            width: 100%;
+                            height: 500px;
+                            // border: 1px solid #000;
+                            >h3{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-left: 150px;
+                                margin-top: -50px;
+                                font-size: 40px;
+                                text-indent: 100px;
+                                
+                                &:before{
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    margin-left: -750px;
+                                    margin-top: -100px;
+                                    display: block;
+                                    content: '';
+                                    width: 650px;
+                                    height: 350px;
+                                    background-image: url(./../images/cleantopia/main.png);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                    border-radius: 10px;
+                                    box-shadow: 5px 5px 10px #ccc;
+                                }
+                            }
+                            >p{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-left: 250px;
+                                margin-top: 10px;
+                                font-size: 18px;
+                                
+                                &:before{
+                                    position: absolute;
+                                    left: -170px;
+                                    top: 0px;
+                                    display: block;
+                                    content: '';
+                                    width: 150px;
+                                    height: 260px;
+                                    background-image: url(./../images/cleantopia/mobile_main.png);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    border-radius: 10px;
+                                    box-shadow: 5px 5px 10px #ccc;
+                                }
+                            }
+                        }
+
+                        >.summary{
+                            height: 500px;
+                            padding-top: 50px;
+                            border-bottom: 1px solid #ccc;
+                            >h3{
+                                text-align: center;
+                                font-size: 40px;
+                                margin: 100px 0 50px 0;
+                            }
+                            >p{
+                                font-size: 18px;
+                                line-height: 30px;
+                                padding: 0 100px;
+                                margin: 30px 0;
+                            }
+                        }//end of .summary
+                        
+                        
+                        >.style_guide{
+                            position: relative;
+                            height: 1950px;
+                            border-bottom: 1px solid #ccc;
+                            >h3{
+                                text-align: center;
+                                font-size: 40px;
+                                margin: 100px 0 50px 0;
+                            }
+                            
+                            >.color{
+                                height: 700px;
+                                >h4{
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 100px;
+                                    font-size: 35px;
+                                    font-weight: 500;
+                                }
+                                >h5{
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 200px;
+                                    font-size: 23px;
+                                    font-weight: 500;
+
+                                    &:nth-of-type(2){
+                                        top: 500px;
+                                    }
+                                }
+                                >div{
+                                    position: absolute;
+                                    right: 50px;
+                                    width: 650px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    >ul{
+                                        width: 200px;
+                                        height: 230px;
+                                        // border: 1px solid #000;
+                                        color: #fff;
+                                        >li{
+                                            margin-left: 20px;
+                                            
+                                            >strong{
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            &:nth-child(1){
+                                                margin-top: 120px;
+                                                font-size: 20px;
+                                                font-weight: 600;
+                                            }
+                                            &:nth-child(2){
+                                                margin-top: 20px;
+                                            }
+                                            &:nth-child(3){
+                                                margin-top: 5px;
+                                            }
+                                        }//end of li
+                                    }//end of ul
+                                    
+                                    >.blue{
+                                        background-color: #2471c8;
+                                    }
+                                    >.green{
+                                        background-color: #02ad4e;
+                                    }
+                                    >.lightgray{
+                                        color: $sec-color-1;
+                                        background-color: #f6f7fa;
+                                        border: 1px solid rgb(200, 200, 200);
+                                    }
+                                }//end of .color1
+                                
+                                >.color1{
+                                    top: 200px;
+
+                                }
+                                >.color2{
+                                    top: 500px;
+
+                                    >.black{
+                                        background-color: #222;
+                                    }
+                                    >.gray{
+                                        background-color: rgb(165, 165, 165);
+                                    }
+                                    >.white{
+                                        color: $sec-color-1;
+                                        background-color: #fff;
+                                        border: 1px solid rgb(200, 200, 200);
+                                    }
+                                }
+                            }//end of .color
+
+                            >.typo{
+                                position: relative;
+                                height: 800px;
+                                >h4{
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 50px;
+                                    font-size: 35px;
+                                    font-weight: 500;
+                                }
+                                >p{
+                                    position: absolute;
+                                    left: 300px;
+                                    top: 200px;
+                                    width: 170px;
+                                    height: 170px;
+                                    text-align: center;
+                                    line-height: 150px;
+                                    font-size: 50px;
+                                    font-weight: 700;
+                                    font-family: sans-serif;
+                                    border: 1px solid rgb(83, 83, 83);
+
+
+                                    &:nth-of-type(2){
+                                        top: 400px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-of-type(3){
+                                        top: 600px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                >ul{
+                                    position: absolute;
+                                    left: 550px;
+                                    top: 180px;
+                                    font-size: 20px;
+                                    font-family: sans-serif;
+
+                                    &:nth-of-type(1){
+                                        font-weight: 700;
+                                    }
+                                    &:nth-of-type(2){
+                                        top: 380px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-of-type(3){
+                                        top: 580px;
+                                        font-weight: 500;
+                                    }
+
+                                    >li{
+                                        &:nth-child(1){
+                                            margin-top: 20px;
+                                            font-size: 30px;
+                                        }
+                                        &:nth-child(2){
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+                            }//end of .typo
+
+                            >.icons{
+                                position: relative;
+                                top: 50px;
+                                height: 200px;
+                                >h4{
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 50px;
+                                    font-size: 35px;
+                                    font-weight: 500;
+                                }
+
+                                >ul{
+                                    position: absolute;
+                                    top: 50px;
+                                    left: 300px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    width: 800px;
+                                    li{
+                                        width: 50px;
+                                        height: 50px;
+                                        text-indent: -9999px;
+                                        // border: 1px solid #000;
+                                        margin-right: 10px;
+                                        margin-bottom: 5px;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+
+                                        &:nth-child(1){background-image: url(./../images/cleantopia/gnb_icon01.png);}
+                                        &:nth-child(2){background-image: url(./../images/cleantopia/gnb_icon02.png);}
+                                        &:nth-child(3){background-image: url(./../images/cleantopia/gnb_icon03.png);}
+                                        &:nth-child(4){background-image: url(./../images/cleantopia/gnb_icon04.png);}
+                                        &:nth-child(5){background-image: url(./../images/cleantopia/gnb_icon05.png);}
+                                        &:nth-child(6){background-image: url(./../images/cleantopia/gnb_icon06.png);}
+                                        &:nth-child(7){background-image: url(./../images/cleantopia/gnb_icon07.png);}
+                                        &:nth-child(8){background-image: url(./../images/cleantopia/icon_h2_blue.png);width: 30px;height: 30px;}
+                                        &:nth-child(9){background-image: url(./../images/cleantopia/bt_menu.png);width: 30px;height: 30px;}
+                                        &:nth-child(10){background-image: url(./../images/cleantopia/icon_sch.png);background-color: #dedede;width: 30px;height: 30px;}
+                                        &:nth-child(11){background-image: url(./../images/cleantopia/m_gnb_info.png);background-color: #dedede;}
+                                        &:nth-child(12){background-image: url(./../images/cleantopia/m_gnb02.png);background-color: #dedede;}
+                                        &:nth-child(13){background-image: url(./../images/cleantopia/m_gnb03.png);background-color: #dedede;background-position: 5px center;}
+                                        &:nth-child(14){background-image: url(./../images/cleantopia/quick_icon01.png);background-color: #dedede;}
+                                        &:nth-child(15){background-image: url(./../images/cleantopia/quick_icon02.png);background-color: #dedede;}
+                                        &:nth-child(16){background-image: url(./../images/cleantopia/quick_icon03.png);background-color: #dedede;}
+                                        &:nth-child(17){background-image: url(./../images/cleantopia/quick_icon04.png);background-color: #dedede;}
+                                        &:nth-child(18){background-image: url(./../images/cleantopia/slide_prev.png);width: 30px;height: 30px;}
+                                        &:nth-child(19){background-image: url(./../images/cleantopia/slide_next.png);width: 30px;height: 30px;}
+                                        &:nth-child(20){background-image: url(./../images/cleantopia/slide_play.png);width: 20px;height: 20px;}
+                                        &:nth-child(21){background-image: url(./../images/cleantopia/slide_stop.png);width: 20px;height: 20px;}
+                                    }
+                                }
+                            }//end of .icons
+                        }//end of .style_guide
+        
+                        >.point{
+                            // border: 1px solid red;
+                            position: relative;
+                            top: 100px;
+                            >h3{
+                                text-align: center;
+                                font-size: 40px;
+                                // margin: 200px 0 50px 0;
+                            }
+                            >article{
+                                position: relative;
+                                >h4{
+                                    position: absolute;
+                                    top: 50px;
+                                    left: 100px;
+                                    font-size: 30px;
+                                }
+                                >figure{
+                                    >figcaption{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            >.point1{
+                                height: 1100px;
+
+                                >figure{
+                                    position: absolute;
+                                    top: 130px;
+                                    left: 300px;
+                                    width: 600px;
+                                    height: 400px;
+                                    &:nth-of-type(2){
+                                        top: 630px;
+                                        &:after{
+                                            position: absolute;
+                                            left: 270px;
+                                            top: -65px;
+                                            display: block;
+                                            content: '';
+                                            width: 50px;
+                                            height: 50px;
+                                            rotate: 90deg;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-image: url(./../images/cleantopia/slide_next.png);
+                                        }
+                                    }
+                                    >img{
+                                        display: block;
+                                        width: 600px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 15px #ccc;
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                    }
+                                }
+                            }//end of .point1
+                            >.point2,.point4{background-color: #f6f7fa;}
+                            
+                            >.point2,.point3,.point4{
+                                position: relative;
+                                height: 900px;
+                                >figure{
+                                    position: absolute;
+                                    top: 150px;left: 120px;
+                                    width: 400px;
+                                    &:nth-of-type(1){
+                                        &:after{
+                                            position: absolute;
+                                            left: 460px;
+                                            top: 50%;
+                                            display: block;
+                                            content: '';
+                                            width: 50px;
+                                            height: 50px;
+                                            margin-top: -25px;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-image: url(./../images/cleantopia/slide_next.png);
+                                        }
+                                    }
+                                    &:nth-of-type(2){left: 670px;}
+                                    
+                                    >img{
+                                        display: block;
+                                        width: 350px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 10px #ccc;
+                                        
+                                        
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                        padding: 0 20px;
+                                    }
+                                }//end of figure
+                            }//end of .point2,.point3,.point4
+                            >.point5{
+                                height: 700px;
+                                >figure{
+                                    position: absolute;
+                                    top: 130px;
+                                    left: 300px;
+                                    width: 600px;
+                                    height: 400px;
+                                    &:nth-of-type(1){
+                                        top: 140px;
+                                        &:after{
+                                        display: none;
+                                        }
+                                    }
+                                    >img{
+                                        display: block;
+                                        width: 600px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 15px #ccc;
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                        font-size: 18px;
+                                        >span{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }//end of .point
+
+                        >.outro{
+                            position: relative;
+                            top: 100px;
+                            height: 600px;
+                            background: linear-gradient(to top , rgb(227, 255, 255) , #fff );
+
+                            >h2{text-indent: -9999px;}
+
+                            >ul{
+                                display: flex;
+                                >li{
+                                    text-indent: -9999px;
+                                    width: 300px;
+                                    height: 100px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    &:nth-child(1){
+                                        position: absolute;
+                                        top: 200px;
+                                        left: 170px;
+                                        background-image: url(./../images/cleantopia/logo.png);
+                                    }
+                                    &:nth-child(2){
+                                        position: absolute;
+                                        top: 100px;
+                                        left: 530px;
+                                        width: 500px;
+                                        height: 400px;
+                                        background-image: url(./../images/mockup_desktop.png);
+
+                                        &:after{
+                                            position: absolute;
+                                            left: 7px;
+                                            top: 8px;
+                                            display: block;
+                                            content: '';
+                                            width: 480px;
+                                            height: 289px;
+                                            background-image: url(./../images/cleantopia/main3.png);
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-position: center 0;
+                                        }
+                                    }
+                                    &:nth-child(3){
+                                        position: absolute;
+                                        left: 965px;
+                                        top: 320px;
+                                        width: 90px;
+                                        height: 190px;
+                                        border-radius: 5px;
+                                        background-image: url(./../images/cleantopia/mobile_main.png);
+                                        background-position: 2px 0;
+                                        background-size: cover;
+                                        &:after{
+                                            position: absolute;
+                                            left: -3px;
+                                            top: -6px;
+                                            display: block;
+                                            content: '';
+                                            width: 100px;
+                                            height: 200px;
+                                            background-image: url(./../images/mockup_mobile.png);
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                        }
+                                    }
+                                }//end of li
+                            }//end of ul
+                        }//end of .outro
+        
+                    
+                    }//end of .lightbox
+
+                    >.lb_greenpeace{
+                        >.info{
+                        background: linear-gradient(to bottom , honeydew , #fff );
+                        >h3{
+                            &:before{
+                                margin-left: -710px;
+                                background-image: url(./../images/greenpeace/solution1.png);
+                            }
+                        }
+                        >p{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                        }
+                        >.summary{
+                            height: 600px;
+                        }
+                        >.style_guide{
+                            .orange{background-color: #ff8100;}
+                            .white{
+                                >li{
+                                    color: $sec-color-1;
+
+                                }
+                                border: 1px solid rgb(200, 200, 200);
+                            }
+                            .deepblue{background-color: #292f47;}
+                            div.color2{
+                                right: 275px;
+                                width: 425px;
+                            }
+                            div.color1{
+                                .green{background-color: #6c0;}
+                            }
+                            >.icons{
+                                ul{
+                                    li{
+                                        width: 30px;height: 30px;
+                                        &:nth-child(1){background-image: url(./../images/greenpeace/logo.webp);width: 200px;}
+                                        &:nth-child(2){background-image: url(./../images/greenpeace/prev.png);}
+                                        &:nth-child(3){background-image: url(./../images/greenpeace/next.png);}
+                                        &:nth-child(4){background-image: url(./../images/greenpeace/search_white.png);}
+                                        &:nth-child(5){background-image: url(./../images/greenpeace/facebook.png);}
+                                        &:nth-child(6){background-image: url(./../images/greenpeace/twitter.png);}
+                                        &:nth-child(7){background-image: url(./../images/greenpeace/youtube.png);}
+                                        &:nth-child(8){background-image: url(./../images/greenpeace/instagram.png);}
+                                    }
+                                }
+                            }//end of .icons
+                        }//end of .style_guide
+                        >.point{
+                            >.point1,.point2,.point3,.point4,.point5,.point6,.point7{
+                                height: 1100px;
+                                >figure{
+                                    position: absolute;
+                                    top: 130px;
+                                    left: 300px;
+                                    width: 600px;
+                                    height: 400px;
+                                    &:nth-of-type(1){
+                                        &:after{display: none;}
+                                    }
+                                    &:nth-of-type(2){
+                                        top: 630px;
+                                        left: 300px;
+                                        &:after{
+                                            position: absolute;
+                                            left: 270px;
+                                            top: -80px;
+                                            display: block;
+                                            content: '';
+                                            width: 50px;
+                                            height: 50px;
+                                            rotate: 90deg;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-image: url(./../images/cleantopia/slide_next.png);
+                                        }
+                                    }
+                                    >img{
+                                        display: block;
+                                        width: 600px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 15px #ccc;
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                    }
+                                }//end of figure
+                            }
+                            >.point3{
+                                >figure{
+                                    &:nth-of-type(2){
+                                        &:after{
+                                            top: -150px;
+                                        }
+                                    }
+                                }
+                            }
+                            >.point5{
+                                height: 900px;
+                            }
+                        }//end of .point
+                        >.outro{
+                            background: linear-gradient(to top, honeydew , #fff );
+                            >ul{
+                                >li{
+                                    &:nth-child(1){background-image: url(./../images/greenpeace/logo.webp);}
+                                    &:nth-child(2){
+                                        &:after{
+                                            background-image: url(./../images/greenpeace/solution1.png);
+                                        }
+                                    }
+                                }
+                            }
+                        }//end of .outro
+                    }//end of .lb_greenpeace
+                    
+                    >.lb_profilesite{
+                        >.info{
+                            background: linear-gradient(to bottom , lightyellow , #fff );
+                            >h3{
+                                font-size: 35px;
+                                &:before{
+                                    background-image: url(./../images/profilesite/home.png);
+                                }
+                            }
+                            >p{
+                                &:before{
+                                    height: 250px;
+                                    background-image: url(./../images/profilesite/mobile_home2.png);
+                                }
+                            }
+                        }//end of .info
+                        >.summary{
+                            >p{
+                                >span{
+                                    display: block;
+                                }
+                            }
+                        }
+                        >.style_guide{
+                            .skyblue{
+                                background-color: #cbdcfa;
+                            }
+                            .lightgreen{
+
+                                    background-color: #c0eed5;
+                                
+                            }
+                            .white{
+                                >li{
+                                    color: $sec-color-1;
+
+                                }
+                                border: 1px solid rgb(200, 200, 200);
+                            }
+                            .darkgray{
+                                background-color: #7b7b7b;
+                            }
+                            .gray{
+                                background-color: #818181;
+                            }
+                            div.color2{
+                                right: 275px;
+                                width: 425px;
+                            }
+                            >.typo{
+                                >p{
+                                    font-family: 'Noto Sans KR';
+                                    &:nth-of-type(2){font-weight: 500;}
+                                    &:nth-of-type(3){font-weight: 400;}
+                                }
+                                >ul{
+                                    font-family: 'Noto Sans KR';
+                                    &:nth-of-type(2){font-weight: 500;}
+                                    &:nth-of-type(3){font-weight: 400;}
+                                }
+                            }//end of .typo
+                            >.icons{
+                                ul{
+                                    li{
+                                        &:nth-child(1){background-image: url(./../images/logo_leaf.png);background-color: #dedede;}
+                                        &:nth-child(2){background-image: url(./../images/tree.png);}
+                                        &:nth-child(3){background-image: url(./../images/favicon.ico);}
+                                        &:nth-child(4){background-image: url(./../images/after_up.png);width: 30px;height: 30px;}
+                                        &:nth-child(5){background-image: url(./../images/after_down.png);width: 30px;height: 30px;}
+                                        &:nth-child(6){background-image: url(./../images/cleantopia/slide_prev.png);width: 30px;height: 30px;}
+                                        &:nth-child(7){background-image: url(./../images/cleantopia/slide_next.png);width: 30px;height: 30px;}
+                                    }
+                                }
+                            }
+                        }//end of .style_guide
+                        >.point{
+                            // height: 5000px;
+                            >.point1{
+                                height: 700px;
+                                >figure{
+                                    >figcaption{
+                                        font-size: 18px;
+                                        >span{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            >.point2,.point3,.point4,.point5,.point6,.point7,.point8,.point9{
+                                height: 700px;
+                                >figure{
+                                    position: absolute;
+                                    top: 130px;
+                                    left: 300px;
+                                    width: 600px;
+                                    height: 400px;
+                                    &:nth-of-type(1){
+                                        top: 140px;
+                                        &:after{
+                                        display: none;
+                                        }
+                                    }
+                                    >img{
+                                        display: block;
+                                        width: 600px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 15px #ccc;
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                        font-size: 18px;
+                                        >span{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            >.point6{background-color: #f6f7fa;}
+                            >.point7{
+                                height: 600px;
+                                >figure{
+                                    &:nth-of-type(1){top: 180px;}
+                                }
+                            }
+                            >.point8{
+                                position: relative;
+                                background-color: #f6f7fa;
+                                >figure{
+                                    >img{
+                                        position: absolute;
+                                        width: 200px;
+                                        // height: 300px;
+                                        &:nth-of-type(1){
+                                            left: 75px;
+                                        }
+                                        &:nth-of-type(2){
+                                            left: 325px;
+                                        }
+                                    }
+                                    >figcaption{
+                                        position: absolute;
+                                        top: 400px;
+                                    }
+                                }
+                            }//end of .point8
+                            >.point9{height: 900px;}
+                        }//end of .point
+                        >.outro{
+                            background: linear-gradient(to top , lightyellow , #fff );
+                            >ul{
+                                >li{
+                                    &:nth-child(1){
+                                    top: 60px;
+                                    left: 310px;
+                                    width: 500px;
+                                    height: 400px;
+                                    background-image: url(./../images/mockup_desktop.png);
+
+                                        &:after{
+                                            position: absolute;
+                                            left: 7px;
+                                            top: 8px;
+                                            display: block;
+                                            content: '';
+                                            width: 480px;
+                                            height: 289px;
+                                            background-image: url(./../images/profilesite/home.png);
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-position: -42px 0;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        left: 750px;
+                                        top: 260px;
+                                        width: 90px;
+                                        height: 190px;
+                                        border-radius: 5px;
+                                        background-image: url(./../images/profilesite/mobile_home.png);
+                                        background-position: 2px 0;
+                                        background-size: cover;
+                                        &:after{
+                                            left: -3px;
+                                            top: -5px;
+                                            display: block;
+                                            content: '';
+                                            width: 100px;
+                                            height: 200px;
+                                            background-image: url(./../images/mockup_mobile.png);
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                        }
+                                    }
+
+                                }
+                            }//end of ul
+                        }//end of .outro
+                    }//end of .lb_portfoliosite
+                    >button{
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        top: 12vh;
+                        margin-left: 575px;
+                        color: #fff;
+                        border: none;
+                        font-size: 23px;
+                        background-color: transparent;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }//end of .shadow
+            }//end of .page 
+        }//end of .portfolio1
+        >.portfolio2{
+            position: relative;
+            height: 100vh;
+            >h2{
+                text-indent: -9999px;
+            }
+            >iframe{
+                display: none;
+                position: absolute;
+                width: 1200px;
+                height: 90vh;
+                left: 50%;
+                margin-left: -600px;
+                z-index: 200;
+            }
+            p{
+                display: none;
+                position: absolute;
+                left: 50%;
+                top: 20px;
+                margin-left: 610px;
+                font-size: 25px;
+                cursor: pointer;
+                z-index: 200;
+            }
+            >ul{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -30vw;
+                margin-top: -40vh;
+                width: 60vw;
+                height: 80vh;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                @media screen and (max-width:640px) {
+                }
+                >li{
+                    position: relative;
+                    width: 15vw;
+                    height: 15vw;
+                    margin: 0 30px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    box-shadow: 5px 5px 10px rgb(79, 79, 79);
+                    @media screen and (max-width:640px) {
+                        width: 20vw;
+                        height: 20vw;
+                    }
+                    &:nth-child(1){
+                        background-image: url(./../images/balloon_game.png);
+                        background-size: 130%;
+                        background-position: -1.8vw center;
+                        @media screen and (max-width:640px) {
+                            background-position: -12px center;
+                            
+                        }
+                    }
+                    &:nth-child(2){background-image: url(./../images/lightbox.png);}
+                    &:nth-child(3){
+                        background-image: url(./../images/travel.png);
+                        background-position: -5vw 0;
+                    }
+                    &:nth-child(4){
+                        background-image: url(./../images/calendar.png);
+                        background-position: center 2px;
+                        background-size: contain;
+                    }
+                    &:nth-child(5){background-image: url(./../images/auto_slide.png);}
+                    >a{
+                        display: block;
+                        height: 15vw;
+                        @media screen and (max-width:640px) {
+                            height: 20vw;
+                        }
+                        >ol{
+                            display: none;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 13vw;
+                            height: 13vw;
+                            margin-left: calc(-13vw / 2);
+                            margin-top: calc(-13vw / 2);
+                            border: 1px solid #fff;
+                            @media screen and (max-width:640px) {
+                                left: 0;
+                                top: 0;
+                                width: 18vw;
+                                height: 18vw;
+                                margin: 4px;
+                            }
+
+                            @keyframes fade{
+                                0%{opacity: 0;}
+                                50%{opacity: 0.5;}
+                                100%{opacity: 1;}
+                            }
+                            animation: fade 0.5s linear;
+                            
+                            >li{
+                                position: absolute;
+                                left: 50%;
+                                color: #fff;
+                                width: 13vw;
+                                font-size: 0.8vw;
+                                transform: translateX(-50%);
+                                text-indent: 8px;
+                                &:nth-child(1){
+                                    top: 2vw;
+                                    width: 13vw;
+                                    text-align: center;
+                                    font-size: 1.3vw;
+                                    text-indent: 0;
+                                    @media screen and (max-width:640px) {
+                                        width: 10vw;
+                                        font-size: 2vw;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    top: 6vw;
+                                    @media screen and (max-width:640px) {
+                                        display: none;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    top: 7vw;
+                                    @media screen and (max-width:640px) {
+                                        display: none;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    top: 8vw;
+                                    @media screen and (max-width:640px) {
+                                        display: none;
+                                    }
+                                }
+                                &:nth-child(5){
+                                    top: 10vw;
+                                    background-color: #fff;
+                                    border-radius: 20px;
+                                    width: 5vw;
+                                    text-align: center;
+                                    text-indent: 0;
+                                    height: 2vw;
+                                    font-size: 0.9vw;
+                                    line-height: 2vw;
+                                    color: #000;
+                                    @media screen and (max-width:640px) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            background-color: rgba(0,0,0,0.6);
+                            @media screen and (max-width:640px) {
+                            //    display: none;
+                            }
+                            >ol{
+                                display: block;
+                                
+                            }
+                        }
+                    }//end of a
+                }
+            }
+        }//end of portfolio2
+    }//end of #portfolio
+
+    
+    #contact{
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(to bottom, #fff 70%, $pri-color-1);
+        @media screen and (max-width:640px) {
+            height: 150vh;   
+        }
+        >h2{text-indent: -9999px;}
+        >p{
+            position: absolute;
+            left: 50%;
+            top: 16%;
+            margin-left: -430px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        >dl{
+            position: absolute;
+            left: 50%;
+            top: 15%;
+            margin-left: -350px;
+            width: 800px;
+            border: 1px solid #e4e4e4;
+            border-radius: 20px;
+            overflow: hidden;
+            @media screen and (max-width:640px) {
+                margin: 0;
+                left: 5%;
+                width: 90%;
+                
+            }      
+                
+                
+                
+            >dt{
+                
+                &.on{
+                    background-color: darkseagreen;
+                    color: #fff;
+                    >a{
+                        border: none;
+                        color: #fff;
+                        >.arr{
+
+                            background-image: url(./../images/after_up.png);
+                        }
+                    }
+                }//end of &.on
+                &:nth-of-type(3)>a{
+                    @media screen and (max-width:640px) {
+                        line-height: 35px;
+                    }
+                    >span{
+                        @media screen and (max-width:640px) {
+                            display: block;
+                        }
+                    }
+                }
+                &:nth-of-type(5)>a{
+                    border: none;
+                }
+    
+                >a{
+                    // border: 1px solid #000;
+                    z-index: 200;
+                    position: relative;
+                    display: block;
+                    width: 90%;
+                    height: 70px;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    line-height: 70px;
+                    border-bottom: 1px solid #e4e4e4;
+        
+                    @media screen and (max-width:640px) {
+                            font-size: 3vw;
+                        }
+                        
+                    >.arr{
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 35px;
+                    width: 15px;
+                    height: 19px;
+                    text-indent: -9999px;
+                    background-image: url(../images/after_down.png);
+                    background-repeat: no-repeat;
+                    }  
+                }//end of a
+            }//end of dt
+        
+            //질문에 대한 답변 영역
+            >dd{
+              display: none;
+              background-color: #f8f8f8;
+        
+              >.answer{
+                margin: 0 90px;
+                padding: 40px 0;
+              
+              
+              } 
+            }//end of dd
+      
+          }//end of dl
+    }//end of #contact
+
+    >footer{
+        // border: 1px solid #000;
+        height: 200px;
+
+        >.end{
+            font-size: 12px;
+            font-weight: 400;
+            padding: 40px 200px;
+            line-height: 30px;
+            @media screen and (max-width:640px) {
+                padding: 0 20px;
+            }
+            >.foot-container{
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: 0;
+                    top: -20px;
+                    display: block;
+                    content: '';
+                    width: 80vw;
+                    border-top: 1px solid #fff;
+                }
+                >h2{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color:#fff;
+                }
+                >.contactme{
+                    >a{
+                        color:#fff;
+                    }
+                    >span{
+                        color: #fff;
+                    }
+                  
+                }
+                >p{
+                    color: #fff;
+                }
+            }
+        }
+    }//end of footer
+    aside{
+        // display: none;
+          position: fixed;
+          right: 1em;
+          bottom: 1em;
+          z-index: 1000;
+      
+        >a{
+          display: block;
+          width: 28px;
+          height: 28px;
+          line-height: 28px;
+          text-align: center;
+          background-color: rgb(184, 205, 243);
+          border-radius: 50%;
+      
+          >i{
+            color: #fff;
+          }
+      
+        }
+      }//end of aside
+}//end of #wrap

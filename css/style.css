@@ -1,0 +1,2152 @@
+#wrap {
+  background-color: rgb(203, 220, 250);
+}
+#wrap > .loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 200;
+}
+#wrap > .loading > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -50px;
+  text-indent: -9999px;
+  background-image: url(./../images/loading.gif);
+  background-size: 200%;
+  background-position: center center;
+}
+#wrap > header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+}
+#wrap > header > .container > h2 {
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  margin-left: -60px;
+}
+#wrap > header > .container > h2 > a {
+  display: block;
+  height: 32px;
+  color: #fff;
+  line-height: 32px;
+}
+#wrap > header > .container > .logo2 {
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background-image: url(./../images/logo_leaf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  margin-left: -12.5px;
+}
+#wrap > header > .container > nav.side {
+  top: 30px;
+}
+#wrap > header > .container > nav {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  top: 110px;
+}
+@media screen and (max-width: 640px) {
+  #wrap > header > .container > nav {
+    display: none;
+  }
+}
+#wrap > header > .container > nav > .gnb {
+  display: flex;
+}
+#wrap > header > .container > nav > .gnb > li {
+  margin-right: 20px;
+  text-shadow: 0px 0px 3px rgb(173, 173, 173);
+}
+#wrap > header > .container > nav > .gnb > li:last-child {
+  border-right: 0;
+}
+#wrap > header > .container > nav > .gnb > li.on > a, #wrap > header > .container > nav > .gnb > li:hover > a {
+  color: rgb(167, 167, 167);
+}
+#wrap > header > .container > nav > .gnb > li > a {
+  display: block;
+  height: 14px;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 12px;
+  transition: all 0.2s;
+}
+#wrap #home {
+  background-image: url(./../images/home.jpg);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+#wrap #home > .home_intro {
+  color: #fff;
+}
+#wrap #home > .home_intro > h2 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -33vw;
+  font-size: 4vw;
+  letter-spacing: 3vw;
+  line-height: 150px;
+}
+#wrap #home > .home_intro > p {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  margin-top: 250px;
+  font-size: 1vw;
+  font-weight: 500;
+}
+@media screen and (max-width: 640px) {
+  #wrap #home > .home_intro > p {
+    display: none;
+  }
+}
+#wrap #home > .home_intro > p > span {
+  display: block;
+  text-align: right;
+  line-height: 3vw;
+}
+#wrap #home > .mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #home > .mouse {
+    display: none;
+  }
+}
+@-webkit-keyframes mousewheel {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+@keyframes mousewheel {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+#wrap #home > .mouse > .wheel {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 4px;
+  height: 10px;
+  margin-left: -2px;
+  text-indent: -9999px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-animation: mousewheel 1s linear infinite;
+          animation: mousewheel 1s linear infinite;
+}
+#wrap #intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+#wrap #intro > h2 {
+  position: absolute;
+  right: 5%;
+  top: 20vh;
+  font-size: 3vw;
+}
+#wrap #intro > h2 > span {
+  position: absolute;
+  right: 0;
+  top: -10vh;
+  display: block;
+}
+#wrap #intro > .cloud > li {
+  position: absolute;
+  top: 50%;
+  width: 1000px;
+  height: 800px;
+  z-index: 100;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+  text-indent: -9999px;
+}
+#wrap #intro > .cloud > li:nth-child(1) {
+  left: 0;
+  background-image: url(./../images/cloud1.png);
+}
+#wrap #intro > .cloud > li:nth-child(2) {
+  left: 700px;
+  background-image: url(./../images/cloud2.png);
+}
+#wrap #intro > .cloud > li:nth-child(3) {
+  left: 900px;
+  background-image: url(./../images/cloud3.png);
+}
+#wrap #intro > .cloud > li:nth-child(4) {
+  left: 2000px;
+  margin-top: -150px;
+  background-image: url(./../images/cloud2.png);
+}
+#wrap #intro > .cloud > li:nth-child(5) {
+  left: 2500px;
+  background-image: url(./../images/cloud1.png);
+}
+#wrap #intro > .cloud > li:nth-child(6) {
+  left: 2900px;
+  background-image: url(./../images/cloud3.png);
+}
+#wrap #about {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(203, 220, 250), #fff);
+  position: relative;
+  color: rgb(129, 129, 129);
+}
+@media screen and (max-width: 640px) {
+  #wrap #about {
+    height: 200vh;
+  }
+}
+#wrap #about > .container {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -730px;
+  margin-bottom: -260px;
+  width: 1400px;
+  height: 600px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+  }
+}
+#wrap #about > .container > h2 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  text-indent: -9999px;
+  background-image: url(./../images/profile4.jpg);
+  background-repeat: no-repeat;
+  background-position: -245px -290px;
+  background-size: 230%;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > h2 {
+    top: -8vh;
+    left: 20vw;
+    width: 40vw;
+    height: 40vw;
+    background-position: -27vw -33vw;
+  }
+}
+#wrap #about > .container > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 350px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > div {
+    width: 60%;
+    font-size: 3vw;
+  }
+}
+#wrap #about > .container > div > h3 {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > div > h3 {
+    font-size: 4vw;
+  }
+}
+#wrap #about > .container > div > .tit {
+  position: absolute;
+  width: 80px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#wrap #about > .container > div > .cont {
+  position: absolute;
+  left: 80px;
+  width: 270px;
+}
+#wrap #about > .container > .profile {
+  left: 700px;
+  top: 120px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > .profile {
+    left: 20%;
+    top: 20%;
+  }
+}
+#wrap #about > .container > .education {
+  left: 1000px;
+  top: 120px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > .education {
+    top: 40%;
+    left: 20%;
+  }
+}
+#wrap #about > .container > .education > .tit > li {
+  margin-bottom: 5px;
+}
+#wrap #about > .container > .education > .cont > li {
+  margin-bottom: 5px;
+}
+#wrap #about > .container > .skill {
+  left: 700px;
+  top: 350px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > .skill {
+    left: 20%;
+    top: 60%;
+  }
+}
+#wrap #about > .container > .skill > .cont > .progress {
+  position: relative;
+  left: 20px;
+  top: 13px;
+  width: 170px;
+  height: 5px;
+  margin-bottom: 23px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > .skill > .cont > .progress {
+    width: 40%;
+  }
+}
+#wrap #about > .container > .skill > .cont > .progress > .bar {
+  height: 100%;
+  width: 60%;
+  border-radius: 5px;
+  background-color: rgb(129, 129, 129);
+  text-indent: -9999px;
+  transition: all 2s ease-in-out;
+}
+#wrap #about > .container > .hobby {
+  left: 1000px;
+  top: 350px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #about > .container > .hobby {
+    left: 20%;
+    top: 80%;
+  }
+}
+#wrap #about > .container > .hobby > .cont {
+  left: 30px;
+}
+#wrap #about > .container > .hobby > .cont > li {
+  position: relative;
+  margin-bottom: 5px;
+}
+#wrap #about > .container > .hobby > .cont > li:before {
+  position: absolute;
+  left: -20px;
+  top: 11px;
+  display: block;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: 3px solid rgb(129, 129, 129);
+}
+#wrap #strength {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: rgb(167, 167, 167);
+  background: linear-gradient(to bottom, #fff, rgb(192, 238, 213));
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength {
+    width: 100%;
+    height: 100vh;
+  }
+}
+#wrap #strength > .strength_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#wrap #strength > .strength_container > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -530px;
+  font-size: 60px;
+  color: rgb(123, 123, 123);
+}
+#wrap #strength > .strength_container > h2 > span {
+  display: block;
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container > h2 {
+    top: 0;
+    left: 40%;
+    font-size: 7vw;
+    margin: 0 0 0 -100px;
+  }
+}
+#wrap #strength > .strength_container h3 {
+  text-indent: -9999px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./../images/strength_bg2.png);
+  background-size: 107%;
+  background-repeat: no-repeat;
+  background-position: 0px -150px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container h3 {
+    display: none;
+  }
+}
+#wrap #strength > .strength_container > ol {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  margin-top: -280px;
+  margin-left: 200px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container > ol {
+    left: 0;
+    top: 60%;
+    width: 50vw;
+    margin-left: 25vw;
+  }
+}
+#wrap #strength > .strength_container > ol > li {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: rgb(123, 123, 123);
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container > ol > li {
+    font-size: 3.5vw;
+  }
+}
+#wrap #strength > .strength_container > ol > li:after {
+  position: relative;
+  left: -70px;
+  top: -45px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(./../images/tree.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container > ol > li:after {
+    width: 20px;
+    height: 20px;
+    left: -40px;
+    top: -20px;
+  }
+}
+#wrap #portfolio {
+  position: relative;
+  height: 200vh;
+  background: linear-gradient(to bottom, rgb(192, 238, 213), #fff);
+}
+#wrap #portfolio > h1 {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 {
+  position: relative;
+  height: 100vh;
+}
+#wrap #portfolio > .portfolio1 > h2 {
+  text-indent: -9999px;
+}
+#wrap #portfolio > .portfolio1 > p {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  margin-left: -18px;
+}
+#wrap #portfolio > .portfolio1 > p:after {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(./../images/after_down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-animation: scroll 1s linear infinite;
+          animation: scroll 1s linear infinite;
+}
+@-webkit-keyframes scroll {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  30% {
+    top: 25px;
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  30% {
+    top: 25px;
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -700px;
+  margin-top: -300px;
+  width: 1400px;
+  height: 600px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page {
+    width: 80%;
+    height: 90%;
+    margin: 0;
+    left: 10%;
+    top: 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > p {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  margin-top: -35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+#wrap #portfolio > .portfolio1 > .page > p > a {
+  display: block;
+  height: 50px;
+  text-indent: -9999px;
+}
+#wrap #portfolio > .portfolio1 > .page > p:nth-child(1) {
+  left: 5%;
+  background-image: url(./../images/cleantopia/slide_prev.png);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > p:nth-child(1) {
+    left: 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > p:nth-child(2) {
+  left: 95%;
+  background-image: url(./../images/cleantopia/slide_next.png);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > p:nth-child(2) {
+    left: 92%;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  width: 1300px;
+  height: 600px;
+  overflow: hidden;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame {
+    left: 10%;
+    top: 5%;
+    width: 350px;
+    height: 90%;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3900px;
+  display: flex;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container {
+    width: 1050px;
+    height: 600px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1300px;
+  height: 600px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li {
+    width: 350px;
+    height: 600px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p {
+    top: 0;
+    left: 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1) {
+  margin-left: -500px;
+  margin-top: -200px;
+  width: 500px;
+  height: 400px;
+  background-image: url(./../images/desktop.png);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1) {
+    width: 40vw;
+    margin: 20px 10vw;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1):after {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  display: block;
+  content: "";
+  width: 450px;
+  height: 260px;
+  background-image: url(./../images/cleantopia/main.png);
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1):after {
+    left: 6px;
+    top: 6px;
+    width: 37.5vw;
+    height: 21vw;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1):before {
+  position: absolute;
+  left: 0;
+  top: 312px;
+  display: block;
+  content: "";
+  width: 500px;
+  height: 100px;
+  text-indent: -9999px;
+  background-image: url(./../images/mockup_desktop_shadow.png);
+  background-size: contain;
+  background-position: -25px center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(1):before {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2) {
+  margin-left: -60px;
+  width: 100px;
+  height: 180px;
+  background-image: url(./../images/mockup_mobile.png);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2) {
+    width: 7vw;
+    height: 14vw;
+    margin: 23vw 0 0 48vw;
+    background-size: cover;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2):after {
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  display: block;
+  content: "";
+  width: 78px;
+  height: 168px;
+  background-image: url(./../images/cleantopia/mobile_main.png);
+  background-size: cover;
+  background-position: -3px 0;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2):after {
+    left: 3px;
+    top: 2px;
+    width: 6.3vw;
+    background-size: 103%;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2):before {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 89px;
+  height: 30px;
+  display: block;
+  content: "";
+  background-image: url(./../images/mockup_mobile_shadow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .mockup > p:nth-child(2):before {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: 150px;
+  width: 500px;
+  height: 400px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc {
+    left: 10%;
+    top: 200px;
+    width: 50vw;
+    height: 200px;
+    margin: 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .tit > h3 {
+  font-size: 30px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .tit > h3 {
+    font-size: 20px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .tit > p {
+  font-size: 18px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .tit > p {
+    font-size: 13px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt {
+  margin: 20px 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt > li {
+  display: flex;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt > li > span:nth-child(1) {
+  display: block;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt > li > span:nth-child(1) {
+    font-size: 12px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt > li > span:nth-child(2) {
+  display: block;
+  width: 300px;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .txt > li > span:nth-child(2) {
+    font-size: 11px;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn {
+  display: flex;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn > a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 40px;
+  color: #fff;
+  background-color: rgb(99, 207, 148);
+  box-shadow: 5px 5px 10px #ccc;
+  transition: all 0.2s ease-in-out;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn > a:hover {
+  box-shadow: 5px 5px 10px rgb(102, 102, 102);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn > a:nth-of-type(1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn > a:nth-of-type(2) {
+    margin-left: 15vw;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_greenpeace > .mockup > p:nth-child(1):after {
+  background-image: url(./../images/greenpeace/greenpeace.png);
+  background-size: cover;
+  background-position: center 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_greenpeace > .mockup > p:nth-child(2) {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_profilesite > .mockup > p:nth-child(1):after {
+  background-image: url(./../images/profilesite/home.png);
+  background-position: -30px 0;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_profilesite > .mockup > p:nth-child(1):after {
+    background-position: -10px 0;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_profilesite > .mockup > p:nth-child(2):after {
+  left: 5px;
+  width: 80px;
+  height: 170px;
+  background-image: url(./../images/profilesite/mobile_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -2px center;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_profilesite > .mockup > p:nth-child(2):after {
+    width: 6.4vw;
+    height: 13.3vw;
+    margin: 0px -3px;
+    background-size: cover;
+  }
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 300;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox {
+  display: block;
+  overflow-y: scroll;
+  position: absolute;
+  left: 50%;
+  top: 15vh;
+  width: 1200px;
+  height: 85vh;
+  margin-left: -600px;
+  color: rgb(83, 83, 83);
+  z-index: 300;
+  background-color: #fff;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .info {
+  background: linear-gradient(to bottom, rgb(227, 255, 255), #fff);
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .info > h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 150px;
+  margin-top: -50px;
+  font-size: 40px;
+  text-indent: 100px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .info > h3:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -750px;
+  margin-top: -100px;
+  display: block;
+  content: "";
+  width: 650px;
+  height: 350px;
+  background-image: url(./../images/cleantopia/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .info > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 250px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .info > p:before {
+  position: absolute;
+  left: -170px;
+  top: 0px;
+  display: block;
+  content: "";
+  width: 150px;
+  height: 260px;
+  background-image: url(./../images/cleantopia/mobile_main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .summary {
+  height: 500px;
+  padding-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .summary > h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 100px 0 50px 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .summary > p {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 100px;
+  margin: 30px 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide {
+  position: relative;
+  height: 1950px;
+  border-bottom: 1px solid #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 100px 0 50px 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color {
+  height: 700px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > h4 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  font-size: 35px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > h5 {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  font-size: 23px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > h5:nth-of-type(2) {
+  top: 500px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div {
+  position: absolute;
+  right: 50px;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul {
+  width: 200px;
+  height: 230px;
+  color: #fff;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul > li {
+  margin-left: 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul > li > strong {
+  margin-right: 10px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul > li:nth-child(1) {
+  margin-top: 120px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul > li:nth-child(2) {
+  margin-top: 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > ul > li:nth-child(3) {
+  margin-top: 5px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > .blue {
+  background-color: #2471c8;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > .green {
+  background-color: #02ad4e;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > div > .lightgray {
+  color: rgb(123, 123, 123);
+  background-color: #f6f7fa;
+  border: 1px solid rgb(200, 200, 200);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > .color1 {
+  top: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > .color2 {
+  top: 500px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > .color2 > .black {
+  background-color: #222;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > .color2 > .gray {
+  background-color: rgb(165, 165, 165);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .color > .color2 > .white {
+  color: rgb(123, 123, 123);
+  background-color: #fff;
+  border: 1px solid rgb(200, 200, 200);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo {
+  position: relative;
+  height: 800px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > h4 {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-size: 35px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > p {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: sans-serif;
+  border: 1px solid rgb(83, 83, 83);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > p:nth-of-type(2) {
+  top: 400px;
+  font-weight: 600;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > p:nth-of-type(3) {
+  top: 600px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul {
+  position: absolute;
+  left: 550px;
+  top: 180px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul:nth-of-type(1) {
+  font-weight: 700;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul:nth-of-type(2) {
+  top: 380px;
+  font-weight: 600;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul:nth-of-type(3) {
+  top: 580px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul > li:nth-child(1) {
+  margin-top: 20px;
+  font-size: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .typo > ul > li:nth-child(2) {
+  margin-top: 10px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons {
+  position: relative;
+  top: 50px;
+  height: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > h4 {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-size: 35px;
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 800px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li {
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(1) {
+  background-image: url(./../images/cleantopia/gnb_icon01.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(2) {
+  background-image: url(./../images/cleantopia/gnb_icon02.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(3) {
+  background-image: url(./../images/cleantopia/gnb_icon03.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(4) {
+  background-image: url(./../images/cleantopia/gnb_icon04.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(5) {
+  background-image: url(./../images/cleantopia/gnb_icon05.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(6) {
+  background-image: url(./../images/cleantopia/gnb_icon06.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(7) {
+  background-image: url(./../images/cleantopia/gnb_icon07.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(8) {
+  background-image: url(./../images/cleantopia/icon_h2_blue.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(9) {
+  background-image: url(./../images/cleantopia/bt_menu.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(10) {
+  background-image: url(./../images/cleantopia/icon_sch.png);
+  background-color: #dedede;
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(11) {
+  background-image: url(./../images/cleantopia/m_gnb_info.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(12) {
+  background-image: url(./../images/cleantopia/m_gnb02.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(13) {
+  background-image: url(./../images/cleantopia/m_gnb03.png);
+  background-color: #dedede;
+  background-position: 5px center;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(14) {
+  background-image: url(./../images/cleantopia/quick_icon01.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(15) {
+  background-image: url(./../images/cleantopia/quick_icon02.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(16) {
+  background-image: url(./../images/cleantopia/quick_icon03.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(17) {
+  background-image: url(./../images/cleantopia/quick_icon04.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(18) {
+  background-image: url(./../images/cleantopia/slide_prev.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(19) {
+  background-image: url(./../images/cleantopia/slide_next.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(20) {
+  background-image: url(./../images/cleantopia/slide_play.png);
+  width: 20px;
+  height: 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .style_guide > .icons > ul li:nth-child(21) {
+  background-image: url(./../images/cleantopia/slide_stop.png);
+  width: 20px;
+  height: 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point {
+  position: relative;
+  top: 100px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > h3 {
+  text-align: center;
+  font-size: 40px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > article {
+  position: relative;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > article > h4 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-size: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > article > figure > figcaption {
+  font-size: 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 {
+  height: 1100px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 > figure {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 600px;
+  height: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 > figure:nth-of-type(2) {
+  top: 630px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 > figure:nth-of-type(2):after {
+  position: absolute;
+  left: 270px;
+  top: -65px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  rotate: 90deg;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./../images/cleantopia/slide_next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 > figure > img {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point1 > figure > figcaption {
+  position: relative;
+  top: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 {
+  background-color: #f6f7fa;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 {
+  position: relative;
+  height: 900px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 > figure {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  width: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 > figure:nth-of-type(1):after {
+  position: absolute;
+  left: 460px;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./../images/cleantopia/slide_next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 > figure:nth-of-type(2) {
+  left: 670px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 > figure > img {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point2 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point3 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point .point4 > figure > figcaption {
+  position: relative;
+  top: 30px;
+  padding: 0 20px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 {
+  height: 700px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 600px;
+  height: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure:nth-of-type(1) {
+  top: 140px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure:nth-of-type(1):after {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure > img {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure > figcaption {
+  position: relative;
+  top: 30px;
+  font-size: 18px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .point > .point5 > figure > figcaption > span {
+  display: block;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro {
+  position: relative;
+  top: 100px;
+  height: 600px;
+  background: linear-gradient(to top, rgb(227, 255, 255), #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > h2 {
+  text-indent: -9999px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul {
+  display: flex;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li {
+  text-indent: -9999px;
+  width: 300px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li:nth-child(1) {
+  position: absolute;
+  top: 200px;
+  left: 170px;
+  background-image: url(./../images/cleantopia/logo.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li:nth-child(2) {
+  position: absolute;
+  top: 100px;
+  left: 530px;
+  width: 500px;
+  height: 400px;
+  background-image: url(./../images/mockup_desktop.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li:nth-child(2):after {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  display: block;
+  content: "";
+  width: 480px;
+  height: 289px;
+  background-image: url(./../images/cleantopia/main3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li:nth-child(3) {
+  position: absolute;
+  left: 965px;
+  top: 320px;
+  width: 90px;
+  height: 190px;
+  border-radius: 5px;
+  background-image: url(./../images/cleantopia/mobile_main.png);
+  background-position: 2px 0;
+  background-size: cover;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lightbox > .outro > ul > li:nth-child(3):after {
+  position: absolute;
+  left: -3px;
+  top: -6px;
+  display: block;
+  content: "";
+  width: 100px;
+  height: 200px;
+  background-image: url(./../images/mockup_mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .info {
+  background: linear-gradient(to bottom, honeydew, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .info > h3:before {
+  margin-left: -710px;
+  background-image: url(./../images/greenpeace/solution1.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .info > p:before {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .summary {
+  height: 600px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide .orange {
+  background-color: #ff8100;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide .white {
+  border: 1px solid rgb(200, 200, 200);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide .white > li {
+  color: rgb(123, 123, 123);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide .deepblue {
+  background-color: #292f47;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide div.color2 {
+  right: 275px;
+  width: 425px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide div.color1 .green {
+  background-color: #6c0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li {
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(1) {
+  background-image: url(./../images/greenpeace/logo.webp);
+  width: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(2) {
+  background-image: url(./../images/greenpeace/prev.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(3) {
+  background-image: url(./../images/greenpeace/next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(4) {
+  background-image: url(./../images/greenpeace/search_white.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(5) {
+  background-image: url(./../images/greenpeace/facebook.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(6) {
+  background-image: url(./../images/greenpeace/twitter.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(7) {
+  background-image: url(./../images/greenpeace/youtube.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .style_guide > .icons ul li:nth-child(8) {
+  background-image: url(./../images/greenpeace/instagram.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 {
+  height: 1100px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 600px;
+  height: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure:nth-of-type(1):after {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure:nth-of-type(2) {
+  top: 630px;
+  left: 300px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure:nth-of-type(2):after {
+  position: absolute;
+  left: 270px;
+  top: -80px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  rotate: 90deg;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./../images/cleantopia/slide_next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure > img {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point1 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point2 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point3 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point4 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point5 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point6 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point .point7 > figure > figcaption {
+  position: relative;
+  top: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point3 > figure:nth-of-type(2):after {
+  top: -150px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .point > .point5 {
+  height: 900px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .outro {
+  background: linear-gradient(to top, honeydew, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .outro > ul > li:nth-child(1) {
+  background-image: url(./../images/greenpeace/logo.webp);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .outro > ul > li:nth-child(2):after {
+  background-image: url(./../images/greenpeace/solution1.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .info {
+  background: linear-gradient(to bottom, lightyellow, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .info > h3 {
+  font-size: 35px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .info > h3:before {
+  background-image: url(./../images/profilesite/home.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .info > p:before {
+  height: 250px;
+  background-image: url(./../images/profilesite/mobile_home2.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .summary > p > span {
+  display: block;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .skyblue {
+  background-color: #cbdcfa;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .lightgreen {
+  background-color: #c0eed5;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .white {
+  border: 1px solid rgb(200, 200, 200);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .white > li {
+  color: rgb(123, 123, 123);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .darkgray {
+  background-color: #7b7b7b;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide .gray {
+  background-color: #818181;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide div.color2 {
+  right: 275px;
+  width: 425px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > p {
+  font-family: "Noto Sans KR";
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > p:nth-of-type(2) {
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > p:nth-of-type(3) {
+  font-weight: 400;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > ul {
+  font-family: "Noto Sans KR";
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > ul:nth-of-type(2) {
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .typo > ul:nth-of-type(3) {
+  font-weight: 400;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(1) {
+  background-image: url(./../images/logo_leaf.png);
+  background-color: #dedede;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(2) {
+  background-image: url(./../images/tree.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(3) {
+  background-image: url(./../images/favicon.ico);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(4) {
+  background-image: url(./../images/after_up.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(5) {
+  background-image: url(./../images/after_down.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(6) {
+  background-image: url(./../images/cleantopia/slide_prev.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .style_guide > .icons ul li:nth-child(7) {
+  background-image: url(./../images/cleantopia/slide_next.png);
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point1 {
+  height: 700px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point1 > figure > figcaption {
+  font-size: 18px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point1 > figure > figcaption > span {
+  display: block;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 {
+  height: 700px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 600px;
+  height: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure:nth-of-type(1), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure:nth-of-type(1) {
+  top: 140px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure:nth-of-type(1):after {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure > img {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure > figcaption {
+  position: relative;
+  top: 30px;
+  font-size: 18px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point2 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point3 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point4 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point5 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point6 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point7 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point8 > figure > figcaption > span, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point .point9 > figure > figcaption > span {
+  display: block;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point6 {
+  background-color: #f6f7fa;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point7 {
+  height: 600px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point7 > figure:nth-of-type(1) {
+  top: 180px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point8 {
+  position: relative;
+  background-color: #f6f7fa;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point8 > figure > img {
+  position: absolute;
+  width: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point8 > figure > img:nth-of-type(1) {
+  left: 75px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point8 > figure > img:nth-of-type(2) {
+  left: 325px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point8 > figure > figcaption {
+  position: absolute;
+  top: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .point > .point9 {
+  height: 900px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .outro {
+  background: linear-gradient(to top, lightyellow, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .outro > ul > li:nth-child(1) {
+  top: 60px;
+  left: 310px;
+  width: 500px;
+  height: 400px;
+  background-image: url(./../images/mockup_desktop.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .outro > ul > li:nth-child(1):after {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  display: block;
+  content: "";
+  width: 480px;
+  height: 289px;
+  background-image: url(./../images/profilesite/home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -42px 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .outro > ul > li:nth-child(2) {
+  left: 750px;
+  top: 260px;
+  width: 90px;
+  height: 190px;
+  border-radius: 5px;
+  background-image: url(./../images/profilesite/mobile_home.png);
+  background-position: 2px 0;
+  background-size: cover;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_profilesite > .outro > ul > li:nth-child(2):after {
+  left: -3px;
+  top: -5px;
+  display: block;
+  content: "";
+  width: 100px;
+  height: 200px;
+  background-image: url(./../images/mockup_mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 12vh;
+  margin-left: 575px;
+  color: #fff;
+  border: none;
+  font-size: 23px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+#wrap #portfolio > .portfolio2 {
+  position: relative;
+  height: 100vh;
+}
+#wrap #portfolio > .portfolio2 > h2 {
+  text-indent: -9999px;
+}
+#wrap #portfolio > .portfolio2 > iframe {
+  display: none;
+  position: absolute;
+  width: 1200px;
+  height: 90vh;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 200;
+}
+#wrap #portfolio > .portfolio2 p {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  margin-left: 610px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 200;
+}
+#wrap #portfolio > .portfolio2 > ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -30vw;
+  margin-top: -40vh;
+  width: 60vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#wrap #portfolio > .portfolio2 > ul > li {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+  margin: 0 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 5px 5px 10px rgb(79, 79, 79);
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li:nth-child(1) {
+  background-image: url(./../images/balloon_game.png);
+  background-size: 130%;
+  background-position: -1.8vw center;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li:nth-child(1) {
+    background-position: -12px center;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li:nth-child(2) {
+  background-image: url(./../images/lightbox.png);
+}
+#wrap #portfolio > .portfolio2 > ul > li:nth-child(3) {
+  background-image: url(./../images/travel.png);
+  background-position: -5vw 0;
+}
+#wrap #portfolio > .portfolio2 > ul > li:nth-child(4) {
+  background-image: url(./../images/calendar.png);
+  background-position: center 2px;
+  background-size: contain;
+}
+#wrap #portfolio > .portfolio2 > ul > li:nth-child(5) {
+  background-image: url(./../images/auto_slide.png);
+}
+#wrap #portfolio > .portfolio2 > ul > li > a {
+  display: block;
+  height: 15vw;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a {
+    height: 20vw;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 13vw;
+  height: 13vw;
+  margin-left: -6.5vw;
+  margin-top: -6.5vw;
+  border: 1px solid #fff;
+  -webkit-animation: fade 0.5s linear;
+          animation: fade 0.5s linear;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol {
+    left: 0;
+    top: 0;
+    width: 18vw;
+    height: 18vw;
+    margin: 4px;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li {
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  width: 13vw;
+  font-size: 0.8vw;
+  transform: translateX(-50%);
+  text-indent: 8px;
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(1) {
+  top: 2vw;
+  width: 13vw;
+  text-align: center;
+  font-size: 1.3vw;
+  text-indent: 0;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(1) {
+    width: 10vw;
+    font-size: 2vw;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(2) {
+  top: 6vw;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(2) {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(3) {
+  top: 7vw;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(3) {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(4) {
+  top: 8vw;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(4) {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(5) {
+  top: 10vw;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 5vw;
+  text-align: center;
+  text-indent: 0;
+  height: 2vw;
+  font-size: 0.9vw;
+  line-height: 2vw;
+  color: #000;
+}
+@media screen and (max-width: 640px) {
+  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(5) {
+    display: none;
+  }
+}
+#wrap #portfolio > .portfolio2 > ul > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#wrap #portfolio > .portfolio2 > ul > li > a:hover > ol {
+  display: block;
+}
+#wrap #contact {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #fff 70%, rgb(203, 220, 250));
+}
+@media screen and (max-width: 640px) {
+  #wrap #contact {
+    height: 150vh;
+  }
+}
+#wrap #contact > h2 {
+  text-indent: -9999px;
+}
+#wrap #contact > p {
+  position: absolute;
+  left: 50%;
+  top: 16%;
+  margin-left: -430px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#wrap #contact > dl {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  margin-left: -350px;
+  width: 800px;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 640px) {
+  #wrap #contact > dl {
+    margin: 0;
+    left: 5%;
+    width: 90%;
+  }
+}
+#wrap #contact > dl > dt.on {
+  background-color: darkseagreen;
+  color: #fff;
+}
+#wrap #contact > dl > dt.on > a {
+  border: none;
+  color: #fff;
+}
+#wrap #contact > dl > dt.on > a > .arr {
+  background-image: url(./../images/after_up.png);
+}
+@media screen and (max-width: 640px) {
+  #wrap #contact > dl > dt:nth-of-type(3) > a {
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #wrap #contact > dl > dt:nth-of-type(3) > a > span {
+    display: block;
+  }
+}
+#wrap #contact > dl > dt:nth-of-type(5) > a {
+  border: none;
+}
+#wrap #contact > dl > dt > a {
+  z-index: 200;
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 70px;
+  border-bottom: 1px solid #e4e4e4;
+}
+@media screen and (max-width: 640px) {
+  #wrap #contact > dl > dt > a {
+    font-size: 3vw;
+  }
+}
+#wrap #contact > dl > dt > a > .arr {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 15px;
+  height: 19px;
+  text-indent: -9999px;
+  background-image: url(../images/after_down.png);
+  background-repeat: no-repeat;
+}
+#wrap #contact > dl > dd {
+  display: none;
+  background-color: #f8f8f8;
+}
+#wrap #contact > dl > dd > .answer {
+  margin: 0 90px;
+  padding: 40px 0;
+}
+#wrap > footer {
+  height: 200px;
+}
+#wrap > footer > .end {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 40px 200px;
+  line-height: 30px;
+}
+@media screen and (max-width: 640px) {
+  #wrap > footer > .end {
+    padding: 0 20px;
+  }
+}
+#wrap > footer > .end > .foot-container {
+  position: relative;
+}
+#wrap > footer > .end > .foot-container:after {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  display: block;
+  content: "";
+  width: 80vw;
+  border-top: 1px solid #fff;
+}
+#wrap > footer > .end > .foot-container > h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+#wrap > footer > .end > .foot-container > .contactme > a {
+  color: #fff;
+}
+#wrap > footer > .end > .foot-container > .contactme > span {
+  color: #fff;
+}
+#wrap > footer > .end > .foot-container > p {
+  color: #fff;
+}
+#wrap aside {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 1000;
+}
+#wrap aside > a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: rgb(184, 205, 243);
+  border-radius: 50%;
+}
+#wrap aside > a > i {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

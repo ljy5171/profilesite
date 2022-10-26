@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    width: 100vw;
+    height: 100vh;
+    line-height: 200px;
+    text-align: center;
+    background-image: url(./../images/background.jpg);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1+div{text-align: center;}
+
+  .list{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -525px;
+    margin-top: -250px;
+    display: flex;
+    width: 1050px;
+    height: 500px;
+  }
+  .list>a{
+    display: block;
+    width: 350px;
+    height: 400px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    filter: drop-shadow(10px 10px 10px rgb(200, 200, 200));
+
+    transition: all 0.2s ease-in-out;
+}
+.list>a:nth-child(1),
+.list>a:nth-child(2)
+{line-height: 700px;}
+.list>a:hover{
+    filter: drop-shadow(10px 10px 10px #000);
+
+  }
+  
+  
+  .list>a:nth-child(1){background-image: url(./../images/parasol.png);}
+  .list>a:nth-child(2){background-image: url(./../images/monceau.png);}
+  .list>a:nth-child(3){background-image: url(./../images/children.png);}
+  
+  .shadow{
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      background-color: rgba(0,0,0,0.75);
+  }
+
+  .shadow>.lightbox{
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 400px;
+      height: 500px;
+      margin: -250px 0 0 -200px ;
+      background-color: beige;
+  }
+  
+
+  .shadow>.lightbox>p{
+    padding: 30px;
+    font-size: 15px;
+    color: #222;
+  }
+  .shadow>.lightbox>p>span{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 50px 0 0px 0;
+  }
+  .shadow>.lightbox>p>span:nth-child(2){
+    margin: 0;
+    font-size: 18px;
+    margin: 5px 0 50px 0;
+  }
+  .shadow>.lightbox>button{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+  }
