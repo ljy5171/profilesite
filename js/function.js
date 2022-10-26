@@ -234,7 +234,7 @@ if($(window).width()<=640){
 }
 }
 
-$(window).resize(function(){document.location.reload();})
+// $(window).resize(function(){document.location.reload();})
 
 
 const $work1=$('#portfolio > .portfolio2 > ul > li:nth-of-type(1) > a > ol > li:nth-child(5)');
