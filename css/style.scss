@@ -225,7 +225,7 @@ $sec-color-2 : rgb(129, 129, 129);
             background-repeat: no-repeat;
             margin-top: -100px;
             text-indent: -9999px;
-            // border: 1px solid #000;
+            
             &:nth-child(1){
                 left: 0;
                 background-image: url(./../images/cloud1.png);
@@ -312,7 +312,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 height: 200px;
                 font-size: 16px;
                 line-height: 30px;
-                // border: 1px solid #000;
+                
                 
                 @media screen and (max-width:640px) {
                     width: 60%;
@@ -332,13 +332,13 @@ $sec-color-2 : rgb(129, 129, 129);
                     width: 80px;
                     margin-bottom: 10px;
                     font-weight: 500;
-                    // border: 1px solid #000;
+                    
                 }
                 >.cont{
                     position: absolute;
                     left: 80px;
                     width: 270px;
-                    // border: 1px solid #000;
+                    
                 }
 
             }
@@ -460,7 +460,7 @@ $sec-color-2 : rgb(129, 129, 129);
             top: 0;
             width: 100vw;
             height: 100vh;
-            // border: 1px solid #000;
+            
 
             >h2{
                 position: absolute;
@@ -525,7 +525,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 margin-top: -280px;
                 margin-left: 190px;
                 
-                // border: 1px solid #000;
+                
 
                 @media screen and (max-width:640px) {
                     left: 0;
@@ -571,7 +571,7 @@ $sec-color-2 : rgb(129, 129, 129);
         position: relative;
         height: 200vh;
         background: linear-gradient(to bottom, $pri-color-2, #fff);
-        // border: 1px solid #000;
+        
         >h1{display: none;}
         >.portfolio1{
             position: relative;
@@ -611,7 +611,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 margin-top: -300px;
                 width: 1400px;
                 height: 600px;
-                // border: 1px solid #000;
+                
                 @media screen and (max-width:640px) {
                     width: 80%;
                     height: 90%;
@@ -656,7 +656,6 @@ $sec-color-2 : rgb(129, 129, 129);
                     width: 1300px;
                     height: 600px;
                     overflow: hidden;
-                    // border: 1px solid blue;
                     @media screen and (max-width:640px) {
                         left: 10%;
                         top: 5%;
@@ -821,12 +820,12 @@ $sec-color-2 : rgb(129, 129, 129);
                                     width: 50vw;
                                     height: 200px;
                                     margin: 0;
-                                    // border: 1px solid #000;
+                                    
                                 }
                 
                                 >.tit{
                 
-                                    // border: 1px solid #000;
+                                    
                                     >h3{
                                         font-size: 30px;
                                         @media screen and (max-width:640px) {
@@ -843,7 +842,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 
                                 >.txt{
                                     margin: 20px 0;
-                                    // border: 1px solid #000;
+                                    
                                     >li{
                                         display: flex;
                                         // border: 1px solid white;
@@ -985,7 +984,7 @@ $sec-color-2 : rgb(129, 129, 129);
                         color: rgb(83, 83, 83);
                         z-index: 300;
                         background-color: #fff;
-                        // border: 1px solid #000;
+                        
                         
                         >.info{
                             // color:lavenderblush, honeydew, ghostwhite,lemonchiffon,lightcyan,mintcream,rgb(255, 252, 224),lightyellow
@@ -993,7 +992,7 @@ $sec-color-2 : rgb(129, 129, 129);
                             position: relative;
                             width: 100%;
                             height: 500px;
-                            // border: 1px solid #000;
+                            
                             >h3{
                                 position: absolute;
                                 left: 50%;
@@ -1103,7 +1102,7 @@ $sec-color-2 : rgb(129, 129, 129);
                                     >ul{
                                         width: 200px;
                                         height: 230px;
-                                        // border: 1px solid #000;
+                                        
                                         color: #fff;
                                         >li{
                                             margin-left: 20px;
@@ -1248,7 +1247,7 @@ $sec-color-2 : rgb(129, 129, 129);
                                         width: 50px;
                                         height: 50px;
                                         text-indent: -9999px;
-                                        // border: 1px solid #000;
+                                        
                                         margin-right: 10px;
                                         margin-bottom: 5px;
                                         background-repeat: no-repeat;
@@ -2059,7 +2058,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 }
     
                 >a{
-                    // border: 1px solid #000;
+                    
                     z-index: 200;
                     position: relative;
                     display: block;
@@ -2088,7 +2087,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 }//end of a
             }//end of dt
         
-            //질문에 대한 답변 영역
+            
             >dd{
               display: none;
               background-color: #f8f8f8;
@@ -2105,7 +2104,7 @@ $sec-color-2 : rgb(129, 129, 129);
     }//end of #contact
 
     >footer{
-        // border: 1px solid #000;
+        
         height: 200px;
 
         >.end{
