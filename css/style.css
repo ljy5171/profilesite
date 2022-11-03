@@ -414,7 +414,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  color: rgb(167, 167, 167);
+  color: rgb(70, 70, 70);
   background: linear-gradient(to bottom, #fff, rgb(192, 238, 213));
 }
 @media screen and (max-width: 640px) {
@@ -437,7 +437,20 @@
   margin-top: -150px;
   margin-left: -530px;
   font-size: 60px;
-  color: rgb(123, 123, 123);
+  color: rgb(82, 82, 82);
+}
+#wrap #strength > .strength_container > h2:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  background-image: url(./../images/bird.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #wrap #strength > .strength_container > h2 > span {
   display: block;
@@ -476,7 +489,7 @@
   top: 50%;
   width: 500px;
   margin-top: -280px;
-  margin-left: 200px;
+  margin-left: 190px;
 }
 @media screen and (max-width: 640px) {
   #wrap #strength > .strength_container > ol {
@@ -490,7 +503,6 @@
   font-size: 28px;
   font-weight: 500;
   margin: 20px 0;
-  color: rgb(123, 123, 123);
 }
 @media screen and (max-width: 640px) {
   #wrap #strength > .strength_container > ol > li {

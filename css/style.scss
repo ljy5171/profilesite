@@ -446,7 +446,7 @@ $sec-color-2 : rgb(129, 129, 129);
         height: 100vh;
         overflow: hidden;
         position: relative;
-        color: rgb(167, 167, 167);
+        color: rgb(70, 70, 70);
         background: linear-gradient(to bottom, #fff, $pri-color-2);
 
         @media screen and (max-width:640px) {
@@ -469,7 +469,21 @@ $sec-color-2 : rgb(129, 129, 129);
                 margin-top: -150px;
                 margin-left: -530px;
                 font-size: 60px;
-                color: $sec-color-1;
+                color: rgb(82, 82, 82);
+
+                &:after{
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    left: -50px;
+                    top: -10px;
+                    width: 50px;
+                    height: 50px;
+                    opacity: 0.8;
+                    background-image: url(./../images/bird.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
                 
                 >span{
                     display: block;
@@ -509,7 +523,7 @@ $sec-color-2 : rgb(129, 129, 129);
                 top: 50%;
                 width: 500px;
                 margin-top: -280px;
-                margin-left: 200px;
+                margin-left: 190px;
                 
                 // border: 1px solid #000;
 
@@ -524,7 +538,7 @@ $sec-color-2 : rgb(129, 129, 129);
                     font-size: 28px;
                     font-weight: 500;
                     margin: 20px 0;
-                    color: $sec-color-1;
+                    // color: $sec-color-1;
                     @media screen and (max-width:640px) {
                         font-size: 3.5vw;
                     }
