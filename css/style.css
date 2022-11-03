@@ -452,6 +452,11 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 640px) {
+  #wrap #strength > .strength_container > h2:after {
+    display: none;
+  }
+}
 #wrap #strength > .strength_container > h2 > span {
   display: block;
 }

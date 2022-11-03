@@ -483,6 +483,9 @@ $sec-color-2 : rgb(129, 129, 129);
                     background-image: url(./../images/bird.png);
                     background-size: contain;
                     background-repeat: no-repeat;
+                    @media screen and (max-width:640px) {
+                        display: none;
+                    }
                 }
                 
                 >span{
