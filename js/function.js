@@ -1,5 +1,5 @@
 const $loading = $('.loading');
-$loading.children('p').fadeOut(800);
+$loading.children('p').fadeOut(20000);
 $loading.delay(350).fadeOut(800,function(){
     $(this).remove();
 });
@@ -10,21 +10,7 @@ $loading.delay(350).fadeOut(800,function(){
         new WOW().init();
     });
 
-    // $("id").on("inview", function(evt, visible){
-    //     if(visible==true){
-    //             new WOW().init();
-            
-    //     }
-    // });
-    // $(window).on("scroll", function(){
-    //     const scrollTop = $(this).scrollTop();
     
-    //     if(scrollTop < $("id").offset().top-$(this).height()){
-            
-    //         new WOW().init();
-    //     }
-     
-    // });
 const $h1 = $('h1');
 const $home = $('#home');
 const $mnu = $('nav>.gnb>li>a');
@@ -41,8 +27,8 @@ const $prev=$('#portfolio > .portfolio1 > .page > p:nth-child(1)');
 const $next=$('#portfolio > .portfolio1 > .page > p:nth-child(2)');
 const $cloud=$('#intro > .cloud > li');
 const $header = $('header');
-const homeH = $header.outerHeight();//보더,패딩 포함해서 측정
-const arrTopVal = [];//header이후에 나타나는 section의 top값
+const homeH = $header.outerHeight();
+const arrTopVal = [];
 
 $(window).on('load resize',function(){
     $home.height(window.innerHeight);
@@ -66,7 +52,7 @@ $(window).on('load resize',function(){
         $nav.hide();
     }
 
-    //헤더이후에 나오는 섹션들의 거리를 배열에 저장
+    
     for(let i=0;i<$mnu.length;i++){
         arrTopVal[i] = Math.ceil($('header~section').eq(i).offset().top)+1;
     }
