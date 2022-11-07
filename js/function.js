@@ -1,6 +1,6 @@
 const $loading = $('.loading');
-$loading.children('p').fadeOut(20000);
-$loading.delay(350).fadeOut(800,function(){
+$loading.children('p').fadeOut(8000);
+$loading.delay(3000).fadeOut(800,function(){
     $(this).remove();
 });
 
