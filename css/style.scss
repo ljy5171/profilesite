@@ -4,6 +4,13 @@ $pri-color-2 : rgb(192, 238, 213);
 $sec-color-1 : rgb(123, 123, 123);
 $sec-color-2 : rgb(129, 129, 129);
 
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #wrap{
 
     background-color: $pri-color-1;
@@ -671,10 +678,10 @@ $sec-color-2 : rgb(129, 129, 129);
                         position: absolute;
                         left: 0;
                         top: 0;
-                        width: calc(1300px * 3);
+                        width: calc(1300px * 4);
                         display: flex;
                         @media screen and (max-width:640px) {
-                            width: calc(350px * 3);
+                            width: calc(350px * 4);
                             height: 600px;
                         }
 
@@ -908,6 +915,24 @@ $sec-color-2 : rgb(129, 129, 129);
                             }//end of .desc
 
 
+                            &.pf_bccard{
+                               
+                                >.mockup{
+                                    >p{
+                                        &:nth-child(1){
+                                            &:after{
+                                                background-image: url(./../images/bccard/solution1.png);
+                                                background-size: cover;
+                                                background-position: center 0;
+                                            }
+                                        }
+                                        &:nth-child(2){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }//end of &.pf_bccard
+                           
                             &.pf_greenpeace{
                                
                                 >.mockup{
@@ -959,7 +984,7 @@ $sec-color-2 : rgb(129, 129, 129);
                                         }
                                     }
                                 }
-                            }//end of &.pf_bccard
+                            }//end of &.pf_profilesite
                         }//end of li
                     }//end of .ul-container
                 }//end of .frame
@@ -1489,6 +1514,175 @@ $sec-color-2 : rgb(129, 129, 129);
         
                     
                     }//end of .lightbox
+
+                    >.lb_bccard{
+                        >.info{
+                        background: linear-gradient(to bottom , honeydew , #fff );
+                        >h3{
+                            &:before{
+                                margin-left: -710px;
+                                background-image: url(./../images/bccard/solution1.png);
+                            }
+                        }
+                        >p{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                        }
+                        >.summary{
+                            height: 600px;
+                            >p{
+                                >span{display: block;}
+
+                            }
+                        }
+                        >.style_guide{
+                            >.color{
+                                .red{background-color: #e83d45;}
+                                .white{
+                                    >li{
+                                        color: $sec-color-1;
+    
+                                    }
+                                    border: 1px solid rgb(200, 200, 200);
+                                }
+                                .black{background-color: #222;}
+                                >.color2{
+                                    right: 275px;
+                                    width: 425px;
+                                    >.darkgray{background-color: #747474;}
+                                    >.gray{background-color: #ccc;}
+                                }
+                            }
+                            >.typo{
+                                >p{
+                                    font-family: 'OTWelcomeRA';
+                                    line-height: 180px;
+                                    &:nth-of-type(1){font-weight: 600;}
+                                    &:nth-of-type(2){font-weight: 500;}
+                                    &:nth-of-type(3){
+                                        font-weight: 500;
+                                        font-family: 'Noto Sans KR';
+                                    }
+                                }
+                                >ul{
+                                    font-family: 'OTWelcomeRA';
+                                    &:nth-of-type(1){font-weight: 600;}
+                                    &:nth-of-type(2){font-weight: 500;}
+                                    &:nth-of-type(3){
+                                        font-weight: 500;
+                                        font-family: 'Noto Sans KR';
+                                    }
+                                }
+                            }//end of .typo
+                            >.icons{
+                                ul{
+                                    li{
+                                        width: 30px;height: 30px;
+                                        &:nth-child(1){background-image: url(./../images/bccard/h1_logo_individual.gif);width: 200px;}
+                                        &:nth-child(2){background-image: url(./../images/bccard/h-menu-more.png)}
+                                        &:nth-child(3){background-image: url(./../images/bccard/ico_bn1.gif)}
+                                        &:nth-child(4){background-image: url(./../images/bccard/ico_bn3.gif);}
+                                        &:nth-child(5){background-image: url(./../images/bccard/ico_facebook.gif);}
+                                        &:nth-child(6){background-image: url(./../images/bccard/ico_instagram.gif);}
+                                        &:nth-child(7){background-image: url(./../images/bccard/slide_prev.png);}
+                                        &:nth-child(8){background-image: url(./../images/bccard/slide_next.png);}
+                                        &:nth-child(9){background-image: url(./../images/bccard/btn_search.gif);}
+                                        &:nth-child(10){background-image: url(./../images/bccard/ico_roll_g.png);width: 10px;background-color: #fff;}
+                                        &:nth-child(11){background-image: url(./../images/bccard/ico_roll_over_g.png);width: 10px;background-color: #fff;}
+                                        &:nth-child(12){background-image: url(./../images/bccard/btn_play_g.png);width: 10px;background-color: #fff;}
+                                        &:nth-child(13){background-image: url(./../images/bccard/btn_pause_g.png);width: 10px;background-color: #fff;background-position: center center;}
+                                    }
+                                }
+                            }//end of .icons
+                        }//end of .style_guide
+                        >.point{
+                            >.point1,.point2,.point3,.point4,.point5,.point6,.point7{
+                                height: 1100px;
+                                >figure{
+                                    position: absolute;
+                                    top: 130px;
+                                    left: 300px;
+                                    width: 600px;
+                                    height: 400px;
+                                    &:nth-of-type(1){
+                                        &:after{display: none;}
+                                    }
+                                    &:nth-of-type(2){
+                                        top: 630px;
+                                        left: 300px;
+                                        &:after{
+                                            position: absolute;
+                                            left: 270px;
+                                            top: -80px;
+                                            display: block;
+                                            content: '';
+                                            width: 50px;
+                                            height: 50px;
+                                            rotate: 90deg;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-image: url(./../images/cleantopia/slide_next.png);
+                                        }
+                                    }
+                                    >img{
+                                        display: block;
+                                        width: 600px;
+                                        margin: 0 auto;
+                                        box-shadow: 5px 5px 15px #ccc;
+                                    }
+                                    >figcaption{
+                                        position: relative;
+                                        top: 30px;
+                                    }
+                                }//end of figure
+                            }
+                            >.point2,.point4{
+                                height: 800px;
+                                >figure{
+                                    height: 200px;
+                                    &:nth-of-type(2){
+                                        top: 480px;
+                                        &:after{
+                                            top: -140px;
+                                        }
+                                    }
+                                }
+                            }
+                            >.point3{
+                                >figure{
+                                    &:nth-of-type(2){
+                                        &:after{
+                                            top: -150px;
+                                        }
+                                    }
+                                }
+                            }
+                            >.point5{
+                                height: 900px;
+                            }
+                        }//end of .point
+                        >.outro{
+                            background: linear-gradient(to top, honeydew , #fff );
+                            >ul{
+                                >li{
+                                    &:nth-child(1){
+                                        left: 200px;
+                                        width: 180px;
+                                        height: 40px;
+                                        background-image: url(./../images/bccard/h1_logo_individual.gif);
+                                        background-size: cover;
+                                    }
+                                    &:nth-child(2){
+                                        &:after{
+                                            background-image: url(./../images/bccard/solution1.png);
+                                        }
+                                    }
+                                }
+                            }
+                        }//end of .outro
+                    }//end of .lb_greenpeace
 
                     >.lb_greenpeace{
                         >.info{

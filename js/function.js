@@ -176,7 +176,7 @@ if($(window).width()<=640){
         evt.preventDefault();
         
         if(nowIdx<1){
-            nowIdx=2;
+            nowIdx=3;
         }else{
             nowIdx--;
         }
@@ -186,7 +186,7 @@ if($(window).width()<=640){
     $next.on('click',function(evt){
         evt.preventDefault();
         
-        if(nowIdx>1){
+        if(nowIdx>2){
             nowIdx=0;
         }else{
             nowIdx++;
@@ -200,7 +200,7 @@ if($(window).width()<=640){
         evt.preventDefault();
         
         if(nowIdx<1){
-            nowIdx=2;
+            nowIdx=3;
         }else{
             nowIdx--;
         }
@@ -210,7 +210,7 @@ if($(window).width()<=640){
     $next.on('click',function(evt){
         evt.preventDefault();
         
-        if(nowIdx>1){
+        if(nowIdx>2){
             nowIdx=0;
         }else{
             nowIdx++;

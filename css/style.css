@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "OTWelcomeRA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 #wrap {
   background-color: rgb(203, 220, 250);
 }
@@ -667,12 +673,12 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 3900px;
+  width: 5200px;
   display: flex;
 }
 @media screen and (max-width: 640px) {
   #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container {
-    width: 1050px;
+    width: 1400px;
     height: 600px;
   }
 }
@@ -899,6 +905,14 @@
   #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li > .desc > .btn > a:nth-of-type(2) {
     margin-left: 15vw;
   }
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_bccard > .mockup > p:nth-child(1):after {
+  background-image: url(./../images/bccard/solution1.png);
+  background-size: cover;
+  background-position: center 0;
+}
+#wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_bccard > .mockup > p:nth-child(2) {
+  display: none;
 }
 #wrap #portfolio > .portfolio1 > .page > .frame > .ul-container > li.pf_greenpeace > .mockup > p:nth-child(1):after {
   background-image: url(./../images/greenpeace/greenpeace.png);
@@ -1482,6 +1496,195 @@
   background-image: url(./../images/mockup_mobile.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .info {
+  background: linear-gradient(to bottom, honeydew, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .info > h3:before {
+  margin-left: -710px;
+  background-image: url(./../images/bccard/solution1.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .info > p:before {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .summary {
+  height: 600px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .summary > p > span {
+  display: block;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color .red {
+  background-color: #e83d45;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color .white {
+  border: 1px solid rgb(200, 200, 200);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color .white > li {
+  color: rgb(123, 123, 123);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color .black {
+  background-color: #222;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color > .color2 {
+  right: 275px;
+  width: 425px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color > .color2 > .darkgray {
+  background-color: #747474;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .color > .color2 > .gray {
+  background-color: #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > p {
+  font-family: "OTWelcomeRA";
+  line-height: 180px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > p:nth-of-type(1) {
+  font-weight: 600;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > p:nth-of-type(2) {
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > p:nth-of-type(3) {
+  font-weight: 500;
+  font-family: "Noto Sans KR";
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > ul {
+  font-family: "OTWelcomeRA";
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > ul:nth-of-type(1) {
+  font-weight: 600;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > ul:nth-of-type(2) {
+  font-weight: 500;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .typo > ul:nth-of-type(3) {
+  font-weight: 500;
+  font-family: "Noto Sans KR";
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li {
+  width: 30px;
+  height: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(1) {
+  background-image: url(./../images/bccard/h1_logo_individual.gif);
+  width: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(2) {
+  background-image: url(./../images/bccard/h-menu-more.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(3) {
+  background-image: url(./../images/bccard/ico_bn1.gif);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(4) {
+  background-image: url(./../images/bccard/ico_bn3.gif);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(5) {
+  background-image: url(./../images/bccard/ico_facebook.gif);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(6) {
+  background-image: url(./../images/bccard/ico_instagram.gif);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(7) {
+  background-image: url(./../images/bccard/slide_prev.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(8) {
+  background-image: url(./../images/bccard/slide_next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(9) {
+  background-image: url(./../images/bccard/btn_search.gif);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(10) {
+  background-image: url(./../images/bccard/ico_roll_g.png);
+  width: 10px;
+  background-color: #fff;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(11) {
+  background-image: url(./../images/bccard/ico_roll_over_g.png);
+  width: 10px;
+  background-color: #fff;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(12) {
+  background-image: url(./../images/bccard/btn_play_g.png);
+  width: 10px;
+  background-color: #fff;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .style_guide > .icons ul li:nth-child(13) {
+  background-image: url(./../images/bccard/btn_pause_g.png);
+  width: 10px;
+  background-color: #fff;
+  background-position: center center;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 {
+  height: 1100px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 600px;
+  height: 400px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure:nth-of-type(1):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure:nth-of-type(1):after {
+  display: none;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure:nth-of-type(2) {
+  top: 630px;
+  left: 300px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure:nth-of-type(2):after {
+  position: absolute;
+  left: 270px;
+  top: -80px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  rotate: 90deg;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./../images/cleantopia/slide_next.png);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure > img, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure > img {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ccc;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point1 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point2 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point3 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point5 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point6 > figure > figcaption, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point7 > figure > figcaption {
+  position: relative;
+  top: 30px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point2, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 {
+  height: 800px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point2 > figure, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure {
+  height: 200px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point2 > figure:nth-of-type(2), #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure:nth-of-type(2) {
+  top: 480px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point2 > figure:nth-of-type(2):after, #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point .point4 > figure:nth-of-type(2):after {
+  top: -140px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point3 > figure:nth-of-type(2):after {
+  top: -150px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .point > .point5 {
+  height: 900px;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .outro {
+  background: linear-gradient(to top, honeydew, #fff);
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .outro > ul > li:nth-child(1) {
+  left: 200px;
+  width: 180px;
+  height: 40px;
+  background-image: url(./../images/bccard/h1_logo_individual.gif);
+  background-size: cover;
+}
+#wrap #portfolio > .portfolio1 > .page > .shadow > .lb_bccard > .outro > ul > li:nth-child(2):after {
+  background-image: url(./../images/bccard/solution1.png);
 }
 #wrap #portfolio > .portfolio1 > .page > .shadow > .lb_greenpeace > .info {
   background: linear-gradient(to bottom, honeydew, #fff);
