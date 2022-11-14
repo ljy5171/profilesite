@@ -115,24 +115,6 @@
   letter-spacing: 3vw;
   line-height: 150px;
 }
-#wrap #home > .home_intro > p {
-  position: absolute;
-  top: 45%;
-  left: 75%;
-  margin-top: 250px;
-  font-size: 1vw;
-  font-weight: 500;
-}
-@media screen and (max-width: 640px) {
-  #wrap #home > .home_intro > p {
-    display: none;
-  }
-}
-#wrap #home > .home_intro > p > span {
-  display: block;
-  text-align: right;
-  line-height: 3vw;
-}
 #wrap #home > .mouse {
   position: absolute;
   left: 50%;
@@ -416,134 +398,10 @@
   border-radius: 50%;
   border: 3px solid rgb(129, 129, 129);
 }
-#wrap #strength {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  color: rgb(70, 70, 70);
-  background: linear-gradient(to bottom, #fff, rgb(192, 238, 213));
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength {
-    width: 100%;
-    height: 100vh;
-  }
-}
-#wrap #strength > .strength_container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
-#wrap #strength > .strength_container > h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -150px;
-  margin-left: -530px;
-  font-size: 60px;
-  color: rgb(82, 82, 82);
-}
-#wrap #strength > .strength_container > h2:after {
-  display: block;
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: -10px;
-  width: 50px;
-  height: 50px;
-  opacity: 0.8;
-  background-image: url(./../images/bird.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container > h2:after {
-    display: none;
-  }
-}
-#wrap #strength > .strength_container > h2 > span {
-  display: block;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container > h2 {
-    top: 0;
-    left: 40%;
-    font-size: 7vw;
-    margin: 0 0 0 -100px;
-  }
-}
-#wrap #strength > .strength_container h3 {
-  text-indent: -9999px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(./../images/strength_bg2.png);
-  background-size: 107%;
-  background-repeat: no-repeat;
-  background-position: 0px -150px;
-  opacity: 0.7;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container h3 {
-    display: none;
-  }
-}
-#wrap #strength > .strength_container > ol {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 500px;
-  margin-top: -280px;
-  margin-left: 190px;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container > ol {
-    left: 0;
-    top: 60%;
-    width: 50vw;
-    margin-left: 25vw;
-  }
-}
-#wrap #strength > .strength_container > ol > li {
-  font-size: 28px;
-  font-weight: 500;
-  margin: 20px 0;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container > ol > li {
-    font-size: 3.5vw;
-  }
-}
-#wrap #strength > .strength_container > ol > li:after {
-  position: relative;
-  left: -70px;
-  top: -45px;
-  display: block;
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-image: url(./../images/tree.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-@media screen and (max-width: 640px) {
-  #wrap #strength > .strength_container > ol > li:after {
-    width: 20px;
-    height: 20px;
-    left: -40px;
-    top: -20px;
-  }
-}
 #wrap #portfolio {
   position: relative;
-  height: 200vh;
-  background: linear-gradient(to bottom, rgb(192, 238, 213), #fff);
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff, rgb(192, 238, 213) 90%);
 }
 #wrap #portfolio > h1 {
   display: none;
@@ -2014,14 +1872,15 @@
   outline: none;
   cursor: pointer;
 }
-#wrap #portfolio > .portfolio2 {
+#wrap #works {
   position: relative;
   height: 100vh;
+  background: linear-gradient(to bottom, rgb(192, 238, 213), #fff);
 }
-#wrap #portfolio > .portfolio2 > h2 {
+#wrap #works > h2 {
   text-indent: -9999px;
 }
-#wrap #portfolio > .portfolio2 > iframe {
+#wrap #works > iframe {
   display: none;
   position: absolute;
   width: 1200px;
@@ -2030,7 +1889,7 @@
   margin-left: -600px;
   z-index: 200;
 }
-#wrap #portfolio > .portfolio2 p {
+#wrap #works p {
   display: none;
   position: absolute;
   left: 50%;
@@ -2040,7 +1899,7 @@
   cursor: pointer;
   z-index: 200;
 }
-#wrap #portfolio > .portfolio2 > ul {
+#wrap #works > ul {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2052,7 +1911,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-#wrap #portfolio > .portfolio2 > ul > li {
+#wrap #works > ul > li {
   position: relative;
   width: 15vw;
   height: 15vw;
@@ -2063,46 +1922,46 @@
   box-shadow: 5px 5px 10px rgb(79, 79, 79);
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li {
+  #wrap #works > ul > li {
     width: 20vw;
     height: 20vw;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li:nth-child(1) {
+#wrap #works > ul > li:nth-child(1) {
   background-image: url(./../images/balloon_game.png);
   background-size: 130%;
   background-position: -1.8vw center;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li:nth-child(1) {
+  #wrap #works > ul > li:nth-child(1) {
     background-position: -12px center;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li:nth-child(2) {
+#wrap #works > ul > li:nth-child(2) {
   background-image: url(./../images/lightbox.png);
 }
-#wrap #portfolio > .portfolio2 > ul > li:nth-child(3) {
+#wrap #works > ul > li:nth-child(3) {
   background-image: url(./../images/travel.png);
   background-position: -5vw 0;
 }
-#wrap #portfolio > .portfolio2 > ul > li:nth-child(4) {
+#wrap #works > ul > li:nth-child(4) {
   background-image: url(./../images/calendar.png);
   background-position: center 2px;
   background-size: contain;
 }
-#wrap #portfolio > .portfolio2 > ul > li:nth-child(5) {
+#wrap #works > ul > li:nth-child(5) {
   background-image: url(./../images/auto_slide.png);
 }
-#wrap #portfolio > .portfolio2 > ul > li > a {
+#wrap #works > ul > li > a {
   display: block;
   height: 15vw;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a {
+  #wrap #works > ul > li > a {
     height: 20vw;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol {
+#wrap #works > ul > li > a > ol {
   display: none;
   position: absolute;
   left: 50%;
@@ -2116,7 +1975,7 @@
           animation: fade 0.5s linear;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol {
+  #wrap #works > ul > li > a > ol {
     left: 0;
     top: 0;
     width: 18vw;
@@ -2146,7 +2005,7 @@
     opacity: 1;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li {
+#wrap #works > ul > li > a > ol > li {
   position: absolute;
   left: 50%;
   color: #fff;
@@ -2155,7 +2014,7 @@
   transform: translateX(-50%);
   text-indent: 8px;
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(1) {
+#wrap #works > ul > li > a > ol > li:nth-child(1) {
   top: 2vw;
   width: 13vw;
   text-align: center;
@@ -2163,36 +2022,36 @@
   text-indent: 0;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(1) {
+  #wrap #works > ul > li > a > ol > li:nth-child(1) {
     width: 10vw;
     font-size: 2vw;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(2) {
+#wrap #works > ul > li > a > ol > li:nth-child(2) {
   top: 6vw;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(2) {
+  #wrap #works > ul > li > a > ol > li:nth-child(2) {
     display: none;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(3) {
+#wrap #works > ul > li > a > ol > li:nth-child(3) {
   top: 7vw;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(3) {
+  #wrap #works > ul > li > a > ol > li:nth-child(3) {
     display: none;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(4) {
+#wrap #works > ul > li > a > ol > li:nth-child(4) {
   top: 8vw;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(4) {
+  #wrap #works > ul > li > a > ol > li:nth-child(4) {
     display: none;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(5) {
+#wrap #works > ul > li > a > ol > li:nth-child(5) {
   top: 10vw;
   background-color: #fff;
   border-radius: 20px;
@@ -2205,14 +2064,14 @@
   color: #000;
 }
 @media screen and (max-width: 640px) {
-  #wrap #portfolio > .portfolio2 > ul > li > a > ol > li:nth-child(5) {
+  #wrap #works > ul > li > a > ol > li:nth-child(5) {
     display: none;
   }
 }
-#wrap #portfolio > .portfolio2 > ul > li > a:hover {
+#wrap #works > ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-#wrap #portfolio > .portfolio2 > ul > li > a:hover > ol {
+#wrap #works > ul > li > a:hover > ol {
   display: block;
 }
 #wrap #contact {
