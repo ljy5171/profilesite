@@ -217,31 +217,61 @@ $sec-color-2 : rgb(129, 129, 129);
             background-repeat: no-repeat;
             margin-top: -100px;
             text-indent: -9999px;
+            @keyframes move1{
+                from{left: 0;}
+                to{left: 100%;}
+            }
+            @keyframes move2{
+                from{left: 700px;}
+                to{left: 120%;}
+            }
+            @keyframes move3{
+                from{left: 900px;}
+                to{left: 140%;}
+            }
+            @keyframes move4{
+                from{left: -2000px;}
+                to{left: 100%;}
+            }
+            @keyframes move5{
+                from{left: -2500px;}
+                to{left: 80%;}
+            }
+            @keyframes move6{
+                from{left: -2900px;}
+                to{left: 60%;}
+            }
             
             &:nth-child(1){
                 left: 0;
                 background-image: url(./../images/cloud1.png);
+                animation: move1 100s linear infinite;
             }
             &:nth-child(2){
                 left: 700px;
                 background-image: url(./../images/cloud2.png);
+                animation: move2 100s linear infinite;
             }
             &:nth-child(3){
                 left: 900px;
                 background-image: url(./../images/cloud3.png);
+                animation: move3 100s linear infinite;
             }
             &:nth-child(4){
-                left: 2000px;
+                // left: 2000px;
                 margin-top: -150px;
                 background-image: url(./../images/cloud2.png);
+                animation: move4 100s linear infinite;
             }
             &:nth-child(5){
-                left: 2500px;
+                // left: 2500px;
                 background-image: url(./../images/cloud1.png);
+                animation: move5 100s linear infinite;
             }
             &:nth-child(6){
-                left: 2900px;
+                // left: 2900px;
                 background-image: url(./../images/cloud3.png);
+                animation: move6 100s linear infinite;
             }
            }
           }

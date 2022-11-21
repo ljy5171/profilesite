@@ -200,30 +200,135 @@
   margin-top: -100px;
   text-indent: -9999px;
 }
+@-webkit-keyframes move1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes move1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes move2 {
+  from {
+    left: 700px;
+  }
+  to {
+    left: 120%;
+  }
+}
+@keyframes move2 {
+  from {
+    left: 700px;
+  }
+  to {
+    left: 120%;
+  }
+}
+@-webkit-keyframes move3 {
+  from {
+    left: 900px;
+  }
+  to {
+    left: 140%;
+  }
+}
+@keyframes move3 {
+  from {
+    left: 900px;
+  }
+  to {
+    left: 140%;
+  }
+}
+@-webkit-keyframes move4 {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes move4 {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes move5 {
+  from {
+    left: -2500px;
+  }
+  to {
+    left: 80%;
+  }
+}
+@keyframes move5 {
+  from {
+    left: -2500px;
+  }
+  to {
+    left: 80%;
+  }
+}
+@-webkit-keyframes move6 {
+  from {
+    left: -2900px;
+  }
+  to {
+    left: 60%;
+  }
+}
+@keyframes move6 {
+  from {
+    left: -2900px;
+  }
+  to {
+    left: 60%;
+  }
+}
 #wrap #intro > .cloud > li:nth-child(1) {
   left: 0;
   background-image: url(./../images/cloud1.png);
+  -webkit-animation: move1 100s linear infinite;
+          animation: move1 100s linear infinite;
 }
 #wrap #intro > .cloud > li:nth-child(2) {
   left: 700px;
   background-image: url(./../images/cloud2.png);
+  -webkit-animation: move2 100s linear infinite;
+          animation: move2 100s linear infinite;
 }
 #wrap #intro > .cloud > li:nth-child(3) {
   left: 900px;
   background-image: url(./../images/cloud3.png);
+  -webkit-animation: move3 100s linear infinite;
+          animation: move3 100s linear infinite;
 }
 #wrap #intro > .cloud > li:nth-child(4) {
-  left: 2000px;
   margin-top: -150px;
   background-image: url(./../images/cloud2.png);
+  -webkit-animation: move4 100s linear infinite;
+          animation: move4 100s linear infinite;
 }
 #wrap #intro > .cloud > li:nth-child(5) {
-  left: 2500px;
   background-image: url(./../images/cloud1.png);
+  -webkit-animation: move5 100s linear infinite;
+          animation: move5 100s linear infinite;
 }
 #wrap #intro > .cloud > li:nth-child(6) {
-  left: 2900px;
   background-image: url(./../images/cloud3.png);
+  -webkit-animation: move6 100s linear infinite;
+          animation: move6 100s linear infinite;
 }
 #wrap #about {
   height: 100vh;

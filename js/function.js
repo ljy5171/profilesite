@@ -23,12 +23,14 @@ const $contact = $('#contact');
 const $title = $('header>.container>h2');
 
 const $ul_container=$('#portfolio > .portfolio1 > .page > .frame > .ul-container');
+const $li=$('#portfolio > .portfolio1 > .page > .frame > .ul-container > li');
 const $prev=$('#portfolio > .portfolio1 > .page > p:nth-child(1)');
 const $next=$('#portfolio > .portfolio1 > .page > p:nth-child(2)');
 const $cloud=$('#intro > .cloud > li');
 const $header = $('header');
 const homeH = $header.outerHeight();
 const arrTopVal = [];
+
 
 $(window).on('load resize',function(){
     $home.height(window.innerHeight);
@@ -167,60 +169,36 @@ $(window).on('scroll',function(){
     }
 });
 
+//포트폴리오 메뉴이동
 {
 let nowIdx=0;
-if($(window).width()<=640){
     
+$prev.on('click',function(evt){
+    evt.preventDefault();
     
-    $prev.on('click',function(evt){
-        evt.preventDefault();
-        
-        if(nowIdx<1){
-            nowIdx=3;
-        }else{
-            nowIdx--;
-        }
-        console.log(nowIdx);
-        $ul_container.stop().animate({left:-350*nowIdx});
-    });
-    $next.on('click',function(evt){
-        evt.preventDefault();
-        
-        if(nowIdx>2){
-            nowIdx=0;
-        }else{
-            nowIdx++;
-        }
-        $ul_container.stop().animate({left:-350*nowIdx});
-        
-    });
-}else{
+    if(nowIdx<1){
+        nowIdx=3;
+    }else{
+        nowIdx--;
+    }
+    console.log(nowIdx);
+    $ul_container.stop().animate({left:-$li.width()*nowIdx});
+});
+$next.on('click',function(evt){
+    evt.preventDefault();
     
-    $prev.on('click',function(evt){
-        evt.preventDefault();
-        
-        if(nowIdx<1){
-            nowIdx=3;
-        }else{
-            nowIdx--;
-        }
-        console.log(nowIdx);
-        $ul_container.stop().animate({left:-1300*nowIdx});
+    if(nowIdx>2){
+        nowIdx=0;
+    }else{
+        nowIdx++;
+    }
+    $ul_container.stop().animate({left:-$li.width()*nowIdx});
+    
     });
-    $next.on('click',function(evt){
-        evt.preventDefault();
-        
-        if(nowIdx>2){
-            nowIdx=0;
-        }else{
-            nowIdx++;
-        }
-        $ul_container.stop().animate({left:-1300*nowIdx});
-    });
-}
 }
 
-// $(window).resize(function(){document.location.reload();})
+$(window).resize(function(){$li})
+$(window).resize(function(){$ul_container.css({'left': -$li.width()});})
 
 
 const $work1=$('#portfolio > .portfolio2 > ul > li:nth-of-type(1) > a > ol > li:nth-child(5)');
@@ -280,19 +258,6 @@ $(function(){
     });
 });
 
-//구름이동
-(function () {
-    let intervalKey=null;
-    const autoPlay = function(){
-
-        $cloud.stop().animate({left:"-=1000"},40000,'linear')
-        .animate({left:"+=1000"},40000,'linear');
-    
-};
-    
-    autoPlay();
-    setInterval(autoPlay,40000);
-})();
 
 let nowIdx = null;
 
